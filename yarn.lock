@@ -80,7 +80,16 @@
     jsesc "^2.5.1"
     source-map "^0.5.0"
 
-"@babel/helper-annotate-as-pure@^7.10.4", "@babel/helper-annotate-as-pure@^7.12.13":
+"@babel/generator@^7.13.0":
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.13.0.tgz#bd00d4394ca22f220390c56a0b5b85568ec1ec0c"
+  integrity sha512-zBZfgvBB/ywjx0Rgc2+BwoH/3H+lDtlgD4hBOpEv5LxRnYsm/753iRuLepqnYlynpjC3AdQxtxsoeHJoEEwOAw==
+  dependencies:
+    "@babel/types" "^7.13.0"
+    jsesc "^2.5.1"
+    source-map "^0.5.0"
+
+"@babel/helper-annotate-as-pure@^7.0.0", "@babel/helper-annotate-as-pure@^7.10.4", "@babel/helper-annotate-as-pure@^7.12.13":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.12.13.tgz#0f58e86dfc4bb3b1fcd7db806570e177d439b6ab"
   integrity sha512-7YXfX5wQ5aYM/BOlbSccHDbuXXFPxeoUmfWtz8le2yTkTZc+BxsiEnENFoi2SlmA8ewDkG2LgIMIVzzn2h8kfw==
@@ -277,6 +286,11 @@
   version "7.12.17"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.12.17.tgz#bc85d2d47db38094e5bb268fc761716e7d693848"
   integrity sha512-r1yKkiUTYMQ8LiEI0UcQx5ETw5dpTLn9wijn9hk6KkTtOK95FndDN10M+8/s6k/Ymlbivw0Av9q4SlgF80PtHg==
+
+"@babel/parser@^7.13.0":
+  version "7.13.4"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.13.4.tgz#340211b0da94a351a6f10e63671fa727333d13ab"
+  integrity sha512-uvoOulWHhI+0+1f9L4BoozY7U5cIkZ9PgJqvb041d6vypgUmtVPG4vmGm4pSggjl8BELzvHyUeJSUyEMY6b+qA==
 
 "@babel/plugin-proposal-async-generator-functions@^7.12.1", "@babel/plugin-proposal-async-generator-functions@^7.12.13":
   version "7.12.13"
@@ -1091,17 +1105,17 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.9.2":
+  version "7.13.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.7.tgz#d494e39d198ee9ca04f4dcb76d25d9d7a1dc961a"
+  integrity sha512-h+ilqoX998mRVM5FtB5ijRuHUDVt5l3yfoOi2uh18Z/O3hvyaHQ39NpxVkCIG5yFs+mLq/ewFp8Bss6zmWv6ZA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.12.18"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.18.tgz#af137bd7e7d9705a412b3caaf991fe6aaa97831b"
   integrity sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.9.2":
-  version "7.13.7"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.7.tgz#d494e39d198ee9ca04f4dcb76d25d9d7a1dc961a"
-  integrity sha512-h+ilqoX998mRVM5FtB5ijRuHUDVt5l3yfoOi2uh18Z/O3hvyaHQ39NpxVkCIG5yFs+mLq/ewFp8Bss6zmWv6ZA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1129,10 +1143,34 @@
     globals "^11.1.0"
     lodash "^4.17.19"
 
+"@babel/traverse@^7.4.5":
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.13.0.tgz#6d95752475f86ee7ded06536de309a65fc8966cc"
+  integrity sha512-xys5xi5JEhzC3RzEmSGrs/b3pJW/o87SypZ+G/PhaE7uqVQNv/jlmVIBXuoh5atqQ434LfXV+sf23Oxj0bchJQ==
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/generator" "^7.13.0"
+    "@babel/helper-function-name" "^7.12.13"
+    "@babel/helper-split-export-declaration" "^7.12.13"
+    "@babel/parser" "^7.13.0"
+    "@babel/types" "^7.13.0"
+    debug "^4.1.0"
+    globals "^11.1.0"
+    lodash "^4.17.19"
+
 "@babel/types@^7.0.0", "@babel/types@^7.12.1", "@babel/types@^7.12.13", "@babel/types@^7.12.17", "@babel/types@^7.12.6", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4", "@babel/types@^7.7.0":
   version "7.12.17"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.12.17.tgz#9d711eb807e0934c90b8b1ca0eb1f7230d150963"
   integrity sha512-tNMDjcv/4DIcHxErTgwB9q2ZcYyN0sUfgGKUK/mm1FJK7Wz+KstoEekxrl/tBiNDgLK1HGi+sppj1An/1DR4fQ==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.12.11"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.13.0":
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.13.0.tgz#74424d2816f0171b4100f0ab34e9a374efdf7f80"
+  integrity sha512-hE+HE8rnG1Z6Wzo+MhaKE5lM5eMx71T4EHJgku2E3xIfaULhDcxiiRxUYgwX8qwP1BBSlag+TdGOt6JAidIZTA==
   dependencies:
     "@babel/helper-validator-identifier" "^7.12.11"
     lodash "^4.17.19"
@@ -1160,6 +1198,28 @@
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
+
+"@emotion/is-prop-valid@^0.8.8":
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
+  integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
+  dependencies:
+    "@emotion/memoize" "0.7.4"
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+  integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
+
+"@emotion/stylis@^0.8.4":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@emotion/stylis/-/stylis-0.8.5.tgz#deacb389bd6ee77d1e7fcaccce9e16c5c7e78e04"
+  integrity sha512-h6KtPihKFn3T9fuIrwvXXUOwlx3rfUvfZIcP5a6rh8Y7zjE3O06hT5Ss4S/YI1AYhuZ1kjaE/5EaOOI2NqSylQ==
+
+"@emotion/unitless@^0.7.4":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
+  integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
 "@eslint/eslintrc@^0.3.0":
   version "0.3.0"
@@ -1208,6 +1268,14 @@
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
     "@hapi/hoek" "^8.3.0"
+
+"@hypnosphi/create-react-context@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@hypnosphi/create-react-context/-/create-react-context-0.3.1.tgz#f8bfebdc7665f5d426cba3753e0e9c7d3154d7c6"
+  integrity sha512-V1klUed202XahrWJLLOT3EXNeCpFHCcJntdFGI15ntCwau+jfT386w7OFTMaCqOgXUH1fa0w/I1oZs+i/Rfr0A==
+  dependencies:
+    gud "^1.0.0"
+    warning "^4.0.3"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -1436,6 +1504,11 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
     source-map "^0.7.3"
+
+"@popperjs/core@^2.5.4":
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.8.4.tgz#6f1744b0f69f507a433f42874cc3b2eb4b11b337"
+  integrity sha512-h0lY7g36rhjNV8KVHKS3/BEOgfsxu0AiRI8+ry5IFBGEsQFkpjxtcpVc9ndN8zrKUeMZXAWMc7eQMepfgykpxQ==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
@@ -1709,6 +1782,14 @@
   dependencies:
     "@types/node" "*"
 
+"@types/hoist-non-react-statics@*":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-5.1.1.tgz#3c9ee980f1a10d6021ae6632ca3e79ca2ec4fb50"
@@ -1822,6 +1903,15 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.0.tgz#7036640b4e21cc2f259ae826ce843d277dad8cff"
   integrity sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
+
+"@types/styled-components@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.7.tgz#3cd10b088c1cb1acde2e4b166b3e8275a3083710"
+  integrity sha512-BJzPhFygYspyefAGFZTZ/8lCEY4Tk+Iqktvnko3xmJf9LrLqs3+grxPeU3O0zLl6yjbYBopD0/VikbHgXDbJtA==
+  dependencies:
+    "@types/hoist-non-react-statics" "*"
+    "@types/react" "*"
+    csstype "^3.0.2"
 
 "@types/tapable@*", "@types/tapable@^1.0.5":
   version "1.0.6"
@@ -2126,6 +2216,2114 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@welcome-ui/box@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/box/-/box-3.0.0-alpha.2.tgz#cd4f09d0024238e69fec0f6edc7df883eb1166ec"
+  integrity sha512-SajxHPz41W8RXmswNWAfL8aTbBDa1x+bxjxLtv39cfqyRXmRKia6i5xGQQ1+F7w/MZTwnkYMcEpyKxrBNnI3pg==
+
+"@welcome-ui/button@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/button/-/button-3.0.0-alpha.2.tgz#36744f355d72ed352009a12a3969f7085b5209c1"
+  integrity sha512-WsfYhmYuKaBCwapgq+Yh++/4MPnyRoDx3byfCgHKMiNtCPmRSrgIFIoeO0ZLMXOQleAct9sTa98qikPQQouGXA==
+  dependencies:
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    reakit "^1.3.4"
+
+"@welcome-ui/clear-button@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/clear-button/-/clear-button-3.0.0-alpha.2.tgz#3890879c9d716e77f6344b2a8d22667b216f99f0"
+  integrity sha512-isRIlP4ZRx1OUgAkkmCfQjRIo935DuULJTkmMiNAUViwfe/vuXycbZINZXjaZl/cz0PUO1rYhPQ8I3vxq+4z8w==
+  dependencies:
+    "@welcome-ui/button" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.cross" "^3.0.0-alpha.2"
+
+"@welcome-ui/core@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/core/-/core-3.0.0-alpha.2.tgz#c1b6e1699ef8423ada09fbc7402aa44058098a6e"
+  integrity sha512-ythIIy7dXTU6CfWX0Xw+Hvsy6/5rh8d9MvdV3F9rhOnKWjmw8n6oz6QlDBbtjKklKVAV5yvfVW+LW2rklItGmg==
+  dependencies:
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    ramda "^0.27.0"
+
+"@welcome-ui/date-picker@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/date-picker/-/date-picker-3.0.0-alpha.2.tgz#f66fdd2b3e68a7f94f3fa694665aca5ed966fb52"
+  integrity sha512-EClzF3JFW/gUfANQEgAC1nDcoBztWaepLO/DiZ5cTkz4gSYFq/5hzUz1IbYCeMgfvVKH/gTcP7qYIcCqBGlJAQ==
+  dependencies:
+    "@welcome-ui/date-time-picker-common" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.date" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    react-datepicker "^3.4.1"
+
+"@welcome-ui/date-time-picker-common@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/date-time-picker-common/-/date-time-picker-common-3.0.0-alpha.2.tgz#79cdeb0385f908660965b1a868229daee8a5d677"
+  integrity sha512-NmpWAPA0bMntlpu6Qdp0L06qdkqpV+Z4APZsBpqnm4Tl3FGY68pJLvnhHJiogrUkjk/1fiU9LGP0bEALoIa8Lw==
+  dependencies:
+    "@welcome-ui/button" "^3.0.0-alpha.2"
+    "@welcome-ui/clear-button" "^3.0.0-alpha.2"
+    "@welcome-ui/field" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.left" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.right" "^3.0.0-alpha.2"
+    "@welcome-ui/select" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    lodash.range "^3.2.0"
+    react-datepicker "^3.4.1"
+
+"@welcome-ui/field-group@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/field-group/-/field-group-3.0.0-alpha.2.tgz#24864d306de78b04d5b3e3e2da921e63c14e9e93"
+  integrity sha512-2CuyxGLrrKoTkIQm78oC7dQ9aQAN2jp4+Atu3DJ5O0QF99aL8MnLZ9+JqqV9/OagErg4nuKqYBPVawpOQ7Qmbw==
+  dependencies:
+    "@welcome-ui/label" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+
+"@welcome-ui/field@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/field/-/field-3.0.0-alpha.2.tgz#40f6764c16d076f35fbe62519a0ed5b9a8f9bfb9"
+  integrity sha512-EhdzeqBiWTMen60m8I721WIAJ5NnDPU8BQDCjPWQlSog1tM3qOL/br5CHMoFxyxSRH7B6SlP6Y2cZrG5VvDKuA==
+  dependencies:
+    "@welcome-ui/field-group" "^3.0.0-alpha.2"
+    "@welcome-ui/hint" "^3.0.0-alpha.2"
+    "@welcome-ui/label" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    polished "^3.4.1"
+
+"@welcome-ui/hint@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/hint/-/hint-3.0.0-alpha.2.tgz#db1340627c0197116757c9ce0936a81cef03adca"
+  integrity sha512-pZr+/oE5QM4NBRXvtWNupfPOkM0ZKZq8qLWlTGsk3i1oX3jAHxa3/5GBRvHeq4+kDRq1BLkwjgkep7dVkh8OMw==
+  dependencies:
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    "@welcome-ui/variant-icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icon@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icon/-/icon-3.0.0-alpha.2.tgz#2334ab620150cdf9e413c2c7ccd0f23ed1eef821"
+  integrity sha512-eicEI+MewAFRqnepSvfDDUGx12X0YGEbKSEOCfrn6Dre14SDdJAWaO5cNXZNVlibWMjvfNZBs6p/i+2yWr+v3w==
+  dependencies:
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.actions@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.actions/-/icons.actions-3.0.0-alpha.2.tgz#7eed6ab39526cc56ffb562cd22fb80a048f39b93"
+  integrity sha512-epRXfbAS+YfAmmXiqUPUmZanrxesnZo7jUZm+G1OufzKebHx3Efo7ApmV5amcJAlaXaR6zEXfZtIyvXwxUFlsQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.activity@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.activity/-/icons.activity-3.0.0-alpha.2.tgz#ee1fd3116b09cf6fdbee0c01890841c5b5f6899c"
+  integrity sha512-eDk/UvuhOyS4E04tx3QIMSnf/lsb2SgUf33+FhNHojE42V6z487wD+5Y9B+ozTAJGW8SHvEvoRSNkEfEIbWK/A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.add@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.add/-/icons.add-3.0.0-alpha.2.tgz#75ff531033321e37b06b96bb53a7e8cb435b218b"
+  integrity sha512-tF9zNPsJ+g+quxd18k9+6K00bRFaLmp5w2YgnuqFSvdABh0drTU5hibliZwPQSmLEeIPYGkArmXsxL4uzvxhcA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.address@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.address/-/icons.address-3.0.0-alpha.2.tgz#bc465f1028a3d44c753a2d103cb83af725875b44"
+  integrity sha512-uCgwJC7xZkkn0Hu4ZlYh4IILtyKF5fMQU6t6Q90HlFwp6E41ILyeiRX6jB3aG7wLL+PRb8wi8tA5Jqku5VE5Mw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.alert@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.alert/-/icons.alert-3.0.0-alpha.2.tgz#a5bc73bca578fc32b3ea438e6a0662ed024697d3"
+  integrity sha512-BkpG6Z7kFoFwNb/fdXpQTgp82uoWCZfVDbTvSwB3xdEvIAMJ7RnyuKlf+/+I4f7EQyWIrlbDUmvgDVyNAAwtMQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.analytics@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.analytics/-/icons.analytics-3.0.0-alpha.2.tgz#99bcec81630b0bf81865d4a080b8dd9de551d866"
+  integrity sha512-mWLRSJEabwtwH11mu2ai4H4jGjmi8cRzDfCWswHqKD8OB4omECYaVLM4yeMsKoRsGhOr9Fd7ODSZBbkUdGQI3g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.anniversary@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.anniversary/-/icons.anniversary-3.0.0-alpha.2.tgz#9699519208b697a4eca781f418f43f67efd371c7"
+  integrity sha512-HyOIqQDMNIoDAij8SyNNJgd9IySySx5aKcfFAUap3vSR8xJELKtPbaY7bi3H50tBGyLmy1SQul9zZ8uGep8m1A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.archive@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.archive/-/icons.archive-3.0.0-alpha.2.tgz#d02ed31a0ea843733e23e86778cf93b35baee6d0"
+  integrity sha512-y/S2rv38mE9gw8ARfA3H0UV+TjKS4TTRS2Y0EEukMdH3otkCNWrt2g7zdsNy1gxswO+JA/BAeqScJeuWpOMX0g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.aspect_ratio_fill@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.aspect_ratio_fill/-/icons.aspect_ratio_fill-3.0.0-alpha.2.tgz#cdca185f1fc34d2192c6c42f5140e18c62154a9b"
+  integrity sha512-3Cpr+2f1kfJ6BykuZUp61htezW5M/PXjF/cV4uW4TSrSCpkCYGj3ZfEB5KRTwjjDMd1Y36Ioe245XggMWi60hg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.aspect_ratio_fit@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.aspect_ratio_fit/-/icons.aspect_ratio_fit-3.0.0-alpha.2.tgz#91fe197d4c0804a507a299df29772bb1a49d4534"
+  integrity sha512-HDdf5HkWvKigKYi+f/dQk9vLq/YJV7Gblc/UD6HsiNkgsoK/j+aJD5xTx6ue2uTOrJEjqGbfxij4o2Cc9+28+g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.attachment@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.attachment/-/icons.attachment-3.0.0-alpha.2.tgz#063c734546b80295df0f60ae80a1c38f171b0eb8"
+  integrity sha512-HXWxexUFPiwlKRG/S+Vbg1agMQFXQOJAWf95RU6REqx+Y4+Jvqah/S/NlkB/XbnUXIWHSDxr4p74NhDolCkwkQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.avatar@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.avatar/-/icons.avatar-3.0.0-alpha.2.tgz#4bd0e635b5f26c008b4bcfecf7d50380116ed721"
+  integrity sha512-ehP2PxzujPrxDZ+zqFDZeoAwRYm+q0xqXY7ECg6Q02RhfT1YPCSMWNCgaFnaLiPpzvuZ60ojXYwyOTy6594ZZA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.bar_chart@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.bar_chart/-/icons.bar_chart-3.0.0-alpha.2.tgz#c0ee8f944c1a5a9d49dc4066afb7ad1607b24474"
+  integrity sha512-KfkdJEXAKI7lyLkiN2zdT4SwzbzIAvq3R0lbNVIy5AOgsvlfBj6ZNelEkUafZEMtJXpIR9wFeC/TTKj4qfJBCg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.basketball@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.basketball/-/icons.basketball-3.0.0-alpha.2.tgz#b8fb37d2022f0c73a8ab0a7e14cfd725b5fb5a19"
+  integrity sha512-KX+5iCKRukZy9HH6NjV/fgimFOXK2PBZY3g6U2J2O9kI/Ski4LvLV53l65Hro/AOfF1WpsCPWSSjRHOIPNxw8Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.behance@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.behance/-/icons.behance-3.0.0-alpha.2.tgz#e37ccbdb879da2e9a2446ee7f95f6d98f6be5f20"
+  integrity sha512-y5zIfohWacY6rYcnHQ138OEfrUgLMakg9YgSxh7HCo0+P1xRDQ3p+QMNU9Gtk1qNkAZSWlE9bwqeOIfUMKYP3g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.birthday@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.birthday/-/icons.birthday-3.0.0-alpha.2.tgz#71fba90bd0a392bd9f31e98e60ff2a331178ae02"
+  integrity sha512-LgFXQrKW+ktX/HmqtFMQjfgVIo82+J6YFnFH3hdcllDMdOScHz/g1492XPnO72EdFfX7tZ15XZZGdaAOnbRgIA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.bold@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.bold/-/icons.bold-3.0.0-alpha.2.tgz#3771c485f0125ab4ee6b6341e8b58be37a33818b"
+  integrity sha512-Mil8Th/N4GQ/i2i06QpB9gxnm7fpUMl2VL6j158KFvaTLXLwZQsYhf9pPpH2egXixTuJ4sP1s1uHAqgy8XXYwA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.book@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.book/-/icons.book-3.0.0-alpha.2.tgz#52d142062d06d7f7f780292af4c52252f58f4e01"
+  integrity sha512-ckTuMICOrALCYI9H1gQPF2Pws90pRxI2IbpqOzrtvlRkMSQe5iIDOUSZQHWWuJtBQnsmQ+qVAABF4E2HG7V6tQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.book_2@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.book_2/-/icons.book_2-3.0.0-alpha.2.tgz#3717b32c600ff0fd4db54003bc806e3afe2db362"
+  integrity sha512-VzZbSLQYIjxt3RLW+SI93Q0Jw+tRjiiBM4Gya+P4kXAKKv6c6JMEbT/ssOZ+K1pd28C4cXRqadqKt8m97f5rLg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.bulb@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.bulb/-/icons.bulb-3.0.0-alpha.2.tgz#6de733991ed607330d8d03574b662bd8f0383bfb"
+  integrity sha512-mK7r/IwDZ3BR3QWZk6TX30JynRjvX3hYclSDFJ+baqRP8DzEwtiZSIAS+3dOTuB/yM3ZW/PlYGV1WCAeWprr4g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.bulk@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.bulk/-/icons.bulk-3.0.0-alpha.2.tgz#b74acd82e5c94b80785936e2680ff42f48889f29"
+  integrity sha512-xUnJYLWA/82uAws08/y4Yt4dllY0yUlfBsS4TEOn65LxbiFHVuUJCFehp1BfAnexm5U1fsEEBzlu8McC7krTJg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.buoy@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.buoy/-/icons.buoy-3.0.0-alpha.2.tgz#b7ecb4894940e9f4b9a7132dcf358f6ea8e0e727"
+  integrity sha512-LMelhyZw1ObUQIF7AvO5eX3v/FZeHe+ojY5RcUcCJbfD0jI9XKldlNUPHcJuBb0ooiisUsDCL1s7rZI4y1Xbkw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.burn@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.burn/-/icons.burn-3.0.0-alpha.2.tgz#257ec26001d19eaa663b7b2c50abdfd3257903ed"
+  integrity sha512-/IV8yGU1uFt7kfwK5NBshMNNTC5ocfFtQvCBIfVJTpp4fFekd8P1CDKUDNi0B2v6BQkJQnkJghbrfb1nmNAwTA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.caddy@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.caddy/-/icons.caddy-3.0.0-alpha.2.tgz#d9b82798ec823d19e115f76781816fdfaac70b1a"
+  integrity sha512-z3KZe6EKC7mPhCABy0aUz+nJmw9lcaUdEQB3L1N/c0uMmfmao+rFMLw7OuS+Fbxyvv0/nzGpv6t+kn6eEmAROQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.calcul@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.calcul/-/icons.calcul-3.0.0-alpha.2.tgz#214ee40f0fd85cb474e5d88297ead6f53aee0a1b"
+  integrity sha512-jcOT/g/sbYeaaDfOpyUw7UomWMamBlO3r7T2FfoSVI3P6VDUsWMmmlx52m0kvQUHps8VrlCROJ5k+7jF+hbU+Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.camera@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.camera/-/icons.camera-3.0.0-alpha.2.tgz#54e009d7ed78aef3271d871b9c08199a37d534ca"
+  integrity sha512-BSDksxyFvK6wDcRHjXERCBSxXbpJNMlrYdQjLSWJ0kHCPnNbzfxMIAJokzeKVcvZkXMQXhWFkCaTrq3MhXAkqg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.candidate_status@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.candidate_status/-/icons.candidate_status-3.0.0-alpha.2.tgz#907a58b2c6ee3a7b25eee2b81c5fe047e2d384e6"
+  integrity sha512-Q+KRv5tE3oL0f5S7T1EAU7dYd3MWot/yaiG2sN6i1A+6491ELuuKG5KGG6YMQQSytB9M6bYwJvXr1edMqFLu4g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.card_view@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.card_view/-/icons.card_view-3.0.0-alpha.2.tgz#0665c3d14d342cdef7769b4c9f0551eca1fdb80b"
+  integrity sha512-XqY/O8Gf7DzCRYhleyWUmQqe3olbrT6l1cCjusZKR5k3okgPKHYPA1xo3EkGsDu3bMgdNlrraxuTxogetvhDAA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.celebrate@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.celebrate/-/icons.celebrate-3.0.0-alpha.2.tgz#78b7432ff4ecc986c1806dfc555aac1f9e2afbc7"
+  integrity sha512-bH1dSTci5ECH6/f1oZ1RoCHqkQ6H1T8dZCE2hizszuC7MRqTDdRi6zYwfHj+1ZzVBqBxCsP6buLqrl6UHpPu8Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.check@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.check/-/icons.check-3.0.0-alpha.2.tgz#8a20cd4fe8fa58095e14f0821b87583de21b6cb3"
+  integrity sha512-JcVH7Pulf+pgk8/copN10Y/LCLBDkF9r8MyZloD4lyxZr0DqApMVJVyTF/j9+s9x7pcBkd4Z2QGw8oXnyUUpJA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.chevron@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.chevron/-/icons.chevron-3.0.0-alpha.2.tgz#57c55d1de32d397fae50c667a516c858eba111a3"
+  integrity sha512-5fXKvUnQMAQqLwamAzRazkkCrPvugSu/gHD0AsljLOMX5WWIv6ZIDNfda+EyOTawTzhY+1Ldx5ukkgfjwB5/6Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.clipboard@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.clipboard/-/icons.clipboard-3.0.0-alpha.2.tgz#f8e49a9a6652e18618237ceef327357f80f30fa3"
+  integrity sha512-npRtmTzDQn5JM4AeRwXdJVBb16dla5x+ZutgG/DhoOx9IS3xgjQfFcnrjx2Na3+zP/41nFEJSyjT7b5HTLmw7A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.clock@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.clock/-/icons.clock-3.0.0-alpha.2.tgz#d03c244da3762d6c68f3da3e6e6936663833d65e"
+  integrity sha512-biymYioe3MA+VW8UNR6Zd0usSDeZSBBadJeeyf9SCPl3pf3wUYJOxL7qqKKnGgjHGcxOa1irZN1n3rw916NbGA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.code@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.code/-/icons.code-3.0.0-alpha.2.tgz#36deb22d2996bdfc6d52b960cfd3da51055861d9"
+  integrity sha512-y2hlWOOkpQqlxmwdzjFjWfsSBJuuJJ9JCN2d/lJsVzSsW2jvDzzBp6TQiDM9geadcgP8g+wLHQt1+zzHg2i8fA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.code_block@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.code_block/-/icons.code_block-3.0.0-alpha.2.tgz#fe4e890043109335febe800f1521ed22de91b988"
+  integrity sha512-0VHFTNMctcQZVFYZlhV7bGUD6L4TXFRI6IkTkEo7W4X/bX2wJtpngEscGTP9ViYEL15ex1anjPtIs1CFi0aN1Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.coffee@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.coffee/-/icons.coffee-3.0.0-alpha.2.tgz#4568f8601131672098776c90c7d9482092428800"
+  integrity sha512-L5skQHj1/Jdve/lIploWvrGcFN6X99KleArqg5lva6wgJi6gfpZSNmrmxdPEPyn8lR3iQ9lmWX4gyShbpCD+dw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.collapse@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.collapse/-/icons.collapse-3.0.0-alpha.2.tgz#1cfd30a998e4df577465d284f3221438ad26fb58"
+  integrity sha512-kt+cNUnZoufVCDvZ+8S6W0erlouV+Jvoj+aj9pQwwihUqmlRFGA8q+J+WOWhdl8FUokBh1sqySoUxFe8QEfdiw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.comment@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.comment/-/icons.comment-3.0.0-alpha.2.tgz#0459cb8f010505e5f1078faf6c3b9445ddf5d923"
+  integrity sha512-Q+XOz/C/CCSLaayqrV/fYhNr1C6n8deDVnqLwyLlXXJrhqjtET1r0vqIJ4YNCA9F4iN94jf8IdOHtXwoTCuOEQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.comment_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.comment_outline/-/icons.comment_outline-3.0.0-alpha.2.tgz#4a34dc837e6facdb5504c304d97f27fb4d38bcdb"
+  integrity sha512-GztXvHiH/uUd0U7QwRTabWAqonsgVYBv1u3n/2VWVz2aNryM3vW3oJ8Hsi2L9ux21yqQ+wIUCD23NvLUMFanig==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.compass@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.compass/-/icons.compass-3.0.0-alpha.2.tgz#bf69c513023fdc0b7420470d843168d4351582d1"
+  integrity sha512-goDBm2+MV+mGSdkUrAxFva/AInJSki18aM+QbRSCgE4W1clJ8gnlDKd7S6B6t0tpwcq3MDLu6KnBAXL9euAU6g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.computer@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.computer/-/icons.computer-3.0.0-alpha.2.tgz#37b1c027ed8cab7426c0a33624f91fb90e9e95a8"
+  integrity sha512-WEf2ZKZhCegkITwpQo2TlzetdBzbIYH7voIRZKao208LqxTmskCIUJ9Lr52prScBrnLyVroE+CKh8vzX5dMlWA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.contract@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.contract/-/icons.contract-3.0.0-alpha.2.tgz#bf4d1d5a4964bc28bab3066e0458f0b9a101ae4a"
+  integrity sha512-uSsqTcm9rDJdnsQVj4vR0x9g6uUGFjGhnqExDTknfa/9k6Tn+YHs27Yv6Wo4kviTdbYRIjG+4mw3ikH+mZH7sA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.copy@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.copy/-/icons.copy-3.0.0-alpha.2.tgz#c017bb122c0fe9bb4486605e08581cfa6ccac7b2"
+  integrity sha512-P+LeuTzPAvHDgoG8EsUq2j3bdqzVwqoLZCkE2zY7GCdt3Fbodum6fFDGaHpqN+YCPD9SxcIRUnsg6NEogI6w+w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.cover_letter@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.cover_letter/-/icons.cover_letter-3.0.0-alpha.2.tgz#d1775657eaec556ba842acbd591211a34121de29"
+  integrity sha512-fpczcA+j2SWUalTYRXAOuOt+tSz5CrpbMwDwJEAicYqj0P0tetSnjYcFbL92vT1qzgey345Y/3PVDHkm/AjsQQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.create@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.create/-/icons.create-3.0.0-alpha.2.tgz#786a10deac4dd2cef2b5d2d5c049e6d515df92dd"
+  integrity sha512-b6C8UWhH/lUlVRioa9fMfrERV39wujS5LlAdGxGXOzehoYRfjZQpvW0jsKn5puglGPeEJWwX3SA0v1Vg8q+Pug==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.credit_card@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.credit_card/-/icons.credit_card-3.0.0-alpha.2.tgz#f6836005a20ee54833d6048234a8481915718680"
+  integrity sha512-SkEr1ufboPdo5+YXZ6+fD58hd0zosucFk3NTo0TWlDca6EVK9EmMxh4oQokpVaFiz0olYMOHmzMsrzDNl8eTVA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.crescent_moon@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.crescent_moon/-/icons.crescent_moon-3.0.0-alpha.2.tgz#138d2fe3649ee96a1c0dd46eb82075df006b8cc6"
+  integrity sha512-/tsmkHA9Sa8BQpWdQKDqSC8gD157Rod0pDSFBZpOSaAcqtHrMb960dg3f+wLBiz0JIsKZeQsGyP+pMctBDQeEw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.crescent_moon_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.crescent_moon_outline/-/icons.crescent_moon_outline-3.0.0-alpha.2.tgz#aecb31a07b340c88a9c3bd148c109e40e0887d18"
+  integrity sha512-MdMB7ue7JV1CARrZsZj9DpG3bEC8wp+/91E1Vp8b6tXNhsPBtpVBlTS3JKv3sxrJXhfuN4eSwpWSd0SUWyMfLQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.cross@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.cross/-/icons.cross-3.0.0-alpha.2.tgz#0785ff84eba87d984e690254d9052108ca4856b3"
+  integrity sha512-AM8V5ya8oZfh1mbsdMK7v+odZv9hLurVTa28KFLPlVx82/MNB0REje3cgonPwlb1Skvhb548Zoh3SahA4UCCZQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.cross_target@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.cross_target/-/icons.cross_target-3.0.0-alpha.2.tgz#9c4c52027ca6667d7f183e0b00520dd639d90d81"
+  integrity sha512-G993yVIB/FiBBHstm5NsObImvJwwP0ldj7QCvT4kAUiP/CWIV7GSXHIPaYUXNZRzufX3CYoEyVC3BN0Z/Qkqdg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.crown@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.crown/-/icons.crown-3.0.0-alpha.2.tgz#4028c6b4098d5dcde450025f07256ef343b86871"
+  integrity sha512-yG2JN9THBzXTXp5mvTgAV8DEafpXOBkU8bNDi0y3ITaOs5g7j55XyXgM42++W0u/t+CXlNfZDd+tCbDR+4dzRA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.csv@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.csv/-/icons.csv-3.0.0-alpha.2.tgz#5a89d1283c28d5a93bf02d7a79dd3f6f8c49189f"
+  integrity sha512-OkT8WQGrAStXsACE3he2zuLfjTxkBMY1lOxvGNisEZtNGolLQSaDl+k8HF/jr9roZgES+7oAcd8eIJIZMH7GEw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.date@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.date/-/icons.date-3.0.0-alpha.2.tgz#a6d368b60c8c13bad957cc654c7a54ca7b2db350"
+  integrity sha512-IuJqGpBFix0YGQfHohspaMSj0BS6bLHRQ9bez4oiT5ZtgVsy0h9ObJ+Belq9ZTJRCTUslZMETyLId7yh4aKAjg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.department@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.department/-/icons.department-3.0.0-alpha.2.tgz#98fa508c16b9fdb84b80c9f20fbb5ac436a3c401"
+  integrity sha512-B4QAk4DbA7CZ5+30N7BYLT8g4HHNi5CMZH+e6i/ySCxYoJcSw6oVgR2D0eDLqA17nH+wXy7N+hXxVuL53W10RA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.details@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.details/-/icons.details-3.0.0-alpha.2.tgz#706947c538e28c054f781f19998648aa19708b6d"
+  integrity sha512-lxlkW4kEyE7uSlCXBJxfpXkV2ygk9TijrroDuoom2hliXLFxiuM031cmJg4GFfDmi8xZhBzgGyXXPfyULlwExA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.diamond@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.diamond/-/icons.diamond-3.0.0-alpha.2.tgz#6e55d7cab7f9dbc59ad12541504f2f55a772ad36"
+  integrity sha512-7wTIMBSjhvH592zkt61hIvPZ7Nx/ngDTS4sE76R0NJhWX41mKLHvKwtQ/xA0UcjlisDqZKEcF+7hGWTlp/lz7Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.dish@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.dish/-/icons.dish-3.0.0-alpha.2.tgz#5cbc70480f9b8f129af53fae94ad8f6484ec460d"
+  integrity sha512-ALPh17HoeKRa2cSSANOwF2pOgmaDI/qgrAtnbq+qsBkMKmWpPJStkDYN9oMJSkRziCzB1u/f+h8XkPKEKwO/Ew==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.doc@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.doc/-/icons.doc-3.0.0-alpha.2.tgz#9de304060b0851d246f626489d233db1508aa312"
+  integrity sha512-eXzfxrKJX4MDK/8Z6MbI3MiSMQVJ5T6KyX4y1vj+ArXxFLuiBLHMP1/eBLOTDhyiustOg+DV5tidiprdjmmaKQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.docx@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.docx/-/icons.docx-3.0.0-alpha.2.tgz#7e02c9294d381d506cea2a48033128133fd02175"
+  integrity sha512-MeGHITKDo2Pjt5M39X26GFtv/Ine0Yx03rWYSOfRvvr2oD70WzjlqEY3Z6bMtUTDiAoS6bLEog8pavuWbgpfiQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.down@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.down/-/icons.down-3.0.0-alpha.2.tgz#8ba00d7883eb341d0274f43b9c177f1ad757e67a"
+  integrity sha512-6erBBTENYTSmQA/nB6wVT4hoI7G3DgOlUwClq3jrKeD86O1smVrehPqSnPuBQPCboBXWvu/oKo1eQufDOmCkyw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.drag_and_drop@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.drag_and_drop/-/icons.drag_and_drop-3.0.0-alpha.2.tgz#1a786a59c6028ea6646536e891392639ccf93d0a"
+  integrity sha512-DD4/UUgvB9GMwUQ9rdxf4IKMQaTbmBtwZMhtYqvW4uhJF2YgLsAbMQknyJab/FOm2PX1f6xT+wb4bDlIUih1Ig==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.dribbble@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.dribbble/-/icons.dribbble-3.0.0-alpha.2.tgz#19da367566070a32701652351ff6ffda0a84e3ce"
+  integrity sha512-65LVHLl+ho5XtMQy7pKIbAt1gH3oEH7xs7zjvNcHaD1QbfyissKGJ0NMopXYkydnm8Xfz8rVxez0RI2ojtkDYw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.earth@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.earth/-/icons.earth-3.0.0-alpha.2.tgz#0d27916fc81c696c83d71ce4a2557b0457c05ecc"
+  integrity sha512-pdJ5c3bnEhD5+qZG2PVOR0KI+vkIZ2Fxf5ZFqyGqLSG3IEiAR8V9sY84zl4LblMkzlKCghQCJuiYgtUi2ub2Bg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.edit@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.edit/-/icons.edit-3.0.0-alpha.2.tgz#af918f63efcdca9c076085e10bcfcac292d298b9"
+  integrity sha512-sdzco6qqvXyB6bcPRlujSmzQu/At4HYGHY1RslBLmRAdUou6xI492GLcVRcezgZsVBkUrtP3aC1DgxMFHXjl9A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.education_level@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.education_level/-/icons.education_level-3.0.0-alpha.2.tgz#af471266d24a16cef69f051356a37d42193039b9"
+  integrity sha512-VoFv00yPqa0g4d/x72acXp4CtMsliVw+wbo2QYKsImBJ1lQhXKWOzlSqoC5fvzjRRjRnV8xfRcOuDgEfiMKquA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.email@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.email/-/icons.email-3.0.0-alpha.2.tgz#f2393d255cd61a6e8e4c027779f6285751e074d1"
+  integrity sha512-Lfz+hmfRPy5DETSwdzSIOpCJsJE1RIW3PmLXjlKYK9cIQwC4R0Q67QvwWa9fhfUa2n75TBEUu61bj4Az1SjCTg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.email_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.email_outline/-/icons.email_outline-3.0.0-alpha.2.tgz#7ec8136c12ac1aa152eb5dc643606e56e5add965"
+  integrity sha512-kax5msZw0ovZeiAWHUTfed1pT50kqBlNx6ciYuwV+/Es4gsv/MU408rK0TZLUK5AeI5+WC79PE94rpudNXLSkg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.eot@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.eot/-/icons.eot-3.0.0-alpha.2.tgz#32e2875c5b1370d973232c7c1da5fe35a739b8de"
+  integrity sha512-vOa2YFVWJpZzs32Ft8kOfPURKZ3+djNFlGquocBgfFU0uduPVI50vnG4ovqvmJUjjggnvVRds+zpb8Yn70RKfQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.expand@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.expand/-/icons.expand-3.0.0-alpha.2.tgz#b9d98fbb95caa751748e2f1763c2fb6ed5f0cc88"
+  integrity sha512-LODdpio/sV+IuhQ6nI19ma/YuWTblPVhcZbVgdfzuSVtpQZMKPaDZz2v2j+wgRgohB6RqJdBnevIgf1Wg4Po1g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.expand_text@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.expand_text/-/icons.expand_text-3.0.0-alpha.2.tgz#b0850988b3d715cb13ed12d47bb0b1058e30be86"
+  integrity sha512-dFz7uU/5XNK7JN2pP16O4WWd759jd/kKv7GESQNLtrrtJCoxRSZ+jyAptEGDKt62bUqWMqbIyv0Y4RAyvp6AGw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.external_link@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.external_link/-/icons.external_link-3.0.0-alpha.2.tgz#b90fb77a1574f82f4c7e19d8435f6b1247ca0c28"
+  integrity sha512-nDjYJoYpWBB4J9MSkpsaGib/sy9WJ9HeMlwY/cFUGOQfSFtkCDmm1oETGJbkQdyxRmpfVdwMA7AgaW9QGkME8w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.eye@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.eye/-/icons.eye-3.0.0-alpha.2.tgz#684b9e391bbe4b8079d3d5e9efd7ff9bf17261e3"
+  integrity sha512-2/mjjeUJu9TTU4vTrgbpCpSeAJ9CGa89xSu1hCcow8cnHChqdaPFDcDDjLXSQ7QGxyw8fs6VF4T9IqTGnaLIYw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.facebook@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.facebook/-/icons.facebook-3.0.0-alpha.2.tgz#98468c2ea55f4a69445bacc621e8f614f63d2aee"
+  integrity sha512-Z/NfS5Jei50GI2tzSYrjuHEXo7dv8QQF1sj63fZdVAe11mVgDXUQPevBYl7zihUu7SBb+K5WPKr92HuE539SGg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.factory@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.factory/-/icons.factory-3.0.0-alpha.2.tgz#48e8b164c2dbf9949ec694c98506aab4e320dfa4"
+  integrity sha512-mYEG/VkWnYv/9XApR1YDEFdoMe7OBpgx2NsGsPUr1x+iRS0Vc2d1UtDDlcFdiIm00KOPOd6Nn8vaHTY40YvblQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.female@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.female/-/icons.female-3.0.0-alpha.2.tgz#b71f9c3cf80cf5f768004d447e37b9181cf1dbb5"
+  integrity sha512-W2De2heYnGTE3WzpJCj5D6vDmntrQaa4DKBQKcQ232Xyh4a9eij6GYCpfjC0Ev5BOa92PqdNpMFNMN1JxaZNAA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.filters@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.filters/-/icons.filters-3.0.0-alpha.2.tgz#a7b207d329a9ebb5919893f20ece02dc3f36c657"
+  integrity sha512-vRLGftaFJgv7M10XcnKYNTgm/2R2TR2kOgEPBVJEcVlNwYBMqdbXp2qGQcD0zcN8lGdLewJ3qB2lGOR7oaYNzQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.fingerprint@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.fingerprint/-/icons.fingerprint-3.0.0-alpha.2.tgz#991bf51b60d40a7a8fe6cb4751079082d9d5a601"
+  integrity sha512-NnS4WNqmGm2dQVQghDRcfIveAOEkajsddG5fgn/QBkwdBmi++rK7eK5bugaQUSzjW+zd/PADhaO1KqDp3gDnhA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag/-/icons.flag-3.0.0-alpha.2.tgz#04a9b43e86666b03c03bf9ae50ff93f4b5e27b92"
+  integrity sha512-eRSSaIxAzIna0WsLcIOY7UOlG70edzhcDl7pPq4B3wXqXqj0mwDQJtsH+H0j3ZUj0juGao+5O6X2BXTabm3l2Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag_cs@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag_cs/-/icons.flag_cs-3.0.0-alpha.2.tgz#b5c8a392dd9e2ff3cbebb7b2ae089176d5e2e82e"
+  integrity sha512-BowcMp8qUp7W8/0/V8sYhDr8N2LzTN3UQSIHvKL8K9KLBbdytPrEsZCg5UrTtB4pleL6rrCOkdBO//rcOnIFUA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag_en@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag_en/-/icons.flag_en-3.0.0-alpha.2.tgz#49fdc9cf87e8976bc9d4909ad9960a580ef6b189"
+  integrity sha512-RofNNdNQYWgw1k2Rvuze/vg2eiHNpRCpPZhsH2So0NlpkjXi9L7JmSYqPY/GGoz3DkDFF3xlI0V0RIxSfpYM0A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag_es@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag_es/-/icons.flag_es-3.0.0-alpha.2.tgz#cfd9fe17237cf80a4bf63fa3404ba62dfabd4b08"
+  integrity sha512-oyyWEh/+IpxqX/byXtEyXM2EfP1qUNWNERIJlsdptnsJKFMkPl9ouubNsNmKlFHVD8QCQ5wECTHsBJ96J0rzeQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag_fr@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag_fr/-/icons.flag_fr-3.0.0-alpha.2.tgz#84991327268538083f6c965e7ecf9e0fbe8318b9"
+  integrity sha512-+W9Uho70X/DXke2o76obvOFl4qAPN9+g3oDKf1nsVZVkPonf+BVGx4/JnIoVGCLBgelESmXgKKWIzUQs0QPbXg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag_pointed@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag_pointed/-/icons.flag_pointed-3.0.0-alpha.2.tgz#01c6c1a45f3f461141097ddaf0fad0d61376b222"
+  integrity sha512-/ZS1ZvOQ9dtLHYRcsUzaq2nd076bXgMkF66WQ6IP2P/FLp8FnIKPsQodRYVrJohBHxqQrlr/Zr3IlgClXFrtOQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.flag_sk@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.flag_sk/-/icons.flag_sk-3.0.0-alpha.2.tgz#14c60c6947971f3223de361b7d32844153860262"
+  integrity sha512-69aEDws56hbzclVlLxnq9ePx5MBj9ZkszKc+8BGd32m3dtwXRSRkKhHQIOdSMD+fcugZRe0pbv3r4vBwdQ+U0w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.folder@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.folder/-/icons.folder-3.0.0-alpha.2.tgz#f093ab8e0bae86727ac594021c5263a15065db7c"
+  integrity sha512-KWFvoL/0nAWUqQ09a2qpX2G1kBdLLa1Cwe27xUXx877fWpdj8urkJ1R2brfyKy1eIt5xv2ZbkJ2ewipCyvdK5w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.gear@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.gear/-/icons.gear-3.0.0-alpha.2.tgz#deb1e492ca54c10d8c9408d35f87e588733c643b"
+  integrity sha512-Era3rRxwvHXR2EIV08WeK+ddljNtu2DerNfMk0e6Nq2JZws13vZ3dyKhXXm00xTFeMQAsMBYslok7xtBum9FyQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.get@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.get/-/icons.get-3.0.0-alpha.2.tgz#ac23378e052399f2ec3e75478284b4b425c0ab6c"
+  integrity sha512-wZ9pi/Uuxh0kIVYlX6TqTE7LX6EJ5qUXBBSRjPWYSAanWLBHr4YCWdTZ1XxDPkxfNClXKR0MCSeNQ+438dN5rw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.gif@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.gif/-/icons.gif-3.0.0-alpha.2.tgz#f2d5cf6a1bb94914aa3bd57e734d4759b6b7a1ce"
+  integrity sha512-GKo9Ny+nAmzTt18l8pFV+52C7lBq0ED1ZquMCbaRMXir5Gni1YitCIdTjbxWTFoeUE9+q1eGraoaE9qZLQMLHA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.github@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.github/-/icons.github-3.0.0-alpha.2.tgz#59b2ba3371191946443fed110c9b357ef2eb401d"
+  integrity sha512-2ksKDGCbW04oNV85a0XsgXFba+0QoGZNO7s6WnkgRDO8tdRm/AJRihe6LPGe5plvREdrk3YrbH98qFTOAw1lTA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.handshake@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.handshake/-/icons.handshake-3.0.0-alpha.2.tgz#db629b68bd300cb44f7e295e0d7377ed5cf7370d"
+  integrity sha512-andnFcbplNlD9wqkomNC1CDvz1ymBCyp7F15yMxXd84JJH5gC1IBnhxcjg+MkOZflC5W86/6C1JoqCGTqt8a+w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.hard_hat@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.hard_hat/-/icons.hard_hat-3.0.0-alpha.2.tgz#a3d576233f500206abba0618a10266f73c3908dc"
+  integrity sha512-KPNnZ6l/SWSm9txgD8+kjrTdLm3N0YvC+HjUmaIGwNUClAvS5mpBAE/N/VMj4VUa008/lIrT1yNF2PqoTIrzbw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.hashtag@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.hashtag/-/icons.hashtag-3.0.0-alpha.2.tgz#addb31137311916bd787785368decb751abd787c"
+  integrity sha512-NQ9iIObQVlEZH3PZfTSet1eqkvIBtAg1PFfqPSd3TpfxFH8snT7TtrO/Zkb3RrjFMvZDvHadh9jTJyVwJWo/tw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading/-/icons.heading-3.0.0-alpha.2.tgz#ca37ff963e1890c79db7d913a4b8ab582ca1d077"
+  integrity sha512-QtNJMX97KeOWeghb50nx02bisLnnJU2A4i14N81XhjvtwHuXa51Lrp4XnQbsccNyzCdRkXxOFKOAkmpLIfQJTw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading_1@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading_1/-/icons.heading_1-3.0.0-alpha.2.tgz#06c5407c0367fd7bf30ecc4caf3cdf36d50d65d9"
+  integrity sha512-1wKsxXc2sjqGmnj4s5yJP+QSpAuxwq4e9q/5Cd7ao2/JMynQdldv8PDJpo0+QrhreTW2ZoXBOjzPcQfDGCNZjw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading_2@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading_2/-/icons.heading_2-3.0.0-alpha.2.tgz#29430c5f19b8ad6d08ef373c4840912f1daa7f2c"
+  integrity sha512-uQaGcKzH52T423dDKvcU1tdwzgc7DfzzpXd2NUsoBmBzssz+8HGJqQqvIYd+pJL5TxJQRT1dXLV7gvSJb8BYOg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading_3@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading_3/-/icons.heading_3-3.0.0-alpha.2.tgz#28c1bf2352ea3640fc90a00bf9407962f5b79b5f"
+  integrity sha512-W9xvDv/KUzbpCicwf++yY5hOlj7EWtAEPJs3abOpQGvVRHoJlyQdd0K46/bdbV9P50gfZdA01KOxniktQtIU+g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading_4@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading_4/-/icons.heading_4-3.0.0-alpha.2.tgz#305a3da0b91c57de1e4e6c284e8796bf62465016"
+  integrity sha512-ajJaZYzK7ZAMp6ixSp1UNcOpZKrltnwD6fI6bAHF3/zkSO45pRmbwYR8OtRPWKuLXmpj23GFjDkX6WMK+hkDpA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading_5@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading_5/-/icons.heading_5-3.0.0-alpha.2.tgz#30e41aeaf5ab98a201f99b8aa0a93b3f96c11428"
+  integrity sha512-SSv4AsqogwsTihd22Wzg+jEVdo3JYkhNhyFkkqeReNUQQ7ytc4DKa+DP3DUqoJm0Q2r8WlIB28Nr4fVdAS3c8A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heading_6@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heading_6/-/icons.heading_6-3.0.0-alpha.2.tgz#c7d9e5335d896fac64ca04608a456fd9898f5c54"
+  integrity sha512-BqhAmZn0e6+vcDpNycs7YSo8L/VUxD4pn9zyEZyPbL7x8mdbo1Y+p3IkQLfvjw7D9J9LoQcv86D/z3euO7vHPQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.headset@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.headset/-/icons.headset-3.0.0-alpha.2.tgz#5b6154ed60b98be85c4964d13ed8525e63302aac"
+  integrity sha512-V+Vp9uRIlnw/VoLpeDXJjUJOqjZh2jV3PZvhTJqEDSfqhA63cpfAMTDHkY8EEooK9FufLoTNywFewjnjfKu1jw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heart@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heart/-/icons.heart-3.0.0-alpha.2.tgz#e1057589133699003be662ab78847d2e6b5d2344"
+  integrity sha512-kb+8pdrYsXzBL9d5qDnn6oee/kseDjypbKmD3pUne0AOr1HMnJ4182Yn5MnGfBGbN8gNxuXfhGsHbqxfSte3Yw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heart_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heart_outline/-/icons.heart_outline-3.0.0-alpha.2.tgz#ba400415e569addacd0d717baad31b567dbb4fba"
+  integrity sha512-WaG3oqvwiMLF+CSwrCsZ8lxogef1vPKp0Q4Qw9vTp5gzpGdKcdl0DmJk6tTf5WYF+3WQoR864kD6Te5XByQ+Og==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.heart_shiny@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.heart_shiny/-/icons.heart_shiny-3.0.0-alpha.2.tgz#cca45854254de0f6d7ae672045681440fc082b52"
+  integrity sha512-x85sTNNjNxNrdq2Aa2nKBGfVuFKCzFLoiwz86xNRtWNBXDEviZY+cXKl99H6bfbCyg8ZALURAKiTPidO6jgUWg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.house@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.house/-/icons.house-3.0.0-alpha.2.tgz#4dee50a400bbdcc3909d1878cf637e96612fe1e7"
+  integrity sha512-u5kL9F3FXYSUN8nJ0mSvrFwcU4rsqLm7Ra74xqN1QcTYXXMGjeYfJVU28JYOerQcE6eYUghaLNdDNJhUDVq1Mg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.in_progress_candidate@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.in_progress_candidate/-/icons.in_progress_candidate-3.0.0-alpha.2.tgz#7c9f2614d2590951776d2f0de71aff92cc255492"
+  integrity sha512-cBww/mtvcLAzo1eXbVOer51ZL5n29aFeNzVmlG9hHufMHeq44EhIOfkz7UH4v4WK71vF4s1on9BKJIUoPgJT1Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.information@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.information/-/icons.information-3.0.0-alpha.2.tgz#f04915cce07fd8c2b0e7952588d6ae3956cebbb0"
+  integrity sha512-61Z06VhsntMPrR5r8Z41t9DauWdYn32ihf8DnZRdvYhFuOirbvkklnRQRDgkHipHCxdNf1tPOcY4BndtcETl2w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.instagram@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.instagram/-/icons.instagram-3.0.0-alpha.2.tgz#bbc514330d671c57a521b51de7bc97911d903705"
+  integrity sha512-3JS87sisEEP6quNDo53+rSbel9u1DdmKhWMtBsSQap4U0A5H1SgJHmde1H/mSk3OWzr3jm32RErJVBQNalv3oQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.italic@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.italic/-/icons.italic-3.0.0-alpha.2.tgz#4e6b967cab59d370f709839976e9cde3dad0cb70"
+  integrity sha512-oazUs3jkkwXhkh29Z9mnLXyqo3tz2bkd9ItPODYuWqoN/YILipJNd5bEtJDARyA52n5CZHSX4FUzZvDJE9wrnw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.jpeg@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.jpeg/-/icons.jpeg-3.0.0-alpha.2.tgz#9eb9e6e2b4a0e6d97b20859032fc8ea1daea860c"
+  integrity sha512-4LgAzCz8m+SpaWnOjaS5b/87lw2fbbcL+y+bD7r+jgQ8a+BhbhkG3y0gRJpVSbQ+V02zlAMM37tjxLZqckS5aA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.jpg@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.jpg/-/icons.jpg-3.0.0-alpha.2.tgz#8dcf414cc42d610ebd31ac69a7981665e9e5f0c2"
+  integrity sha512-SLiomMqS0XqC0mjorA3fFLh4yD4l8mN0PSo8aNb/HirD0OxVFbH8IXF/LlIoL2cpcvo1YISxojT+N5UEaNbWJw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.justice_hammer@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.justice_hammer/-/icons.justice_hammer-3.0.0-alpha.2.tgz#343354b515bcdf9c1f3d19861e191c3f7a823043"
+  integrity sha512-uNTvy90GFiTRkeKos7yBtm1BttOUtlCZKhTJXNOoCZeR+4uAq1I14rx9QOyu5nZuwtXRqN9vRZCayEJaZPwDvg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.kanban@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.kanban/-/icons.kanban-3.0.0-alpha.2.tgz#22ed10f6d2c5ce0c7bc3065007275aedaf708d61"
+  integrity sha512-xg9PHHtOvL8YaLe15X59ECNRN9+o18djLxleUqgxzJGZVPtyJiJDVV4BZRNFe+GkM1u87tiqmZj5B1jyGn+IoA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.key@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.key/-/icons.key-3.0.0-alpha.2.tgz#0b34633ae6d4208a4d8e4849f2cd68dcef7293b9"
+  integrity sha512-SVYq9LiwyfaZ4DvbWv8NztiRawEcz8lgYnBsdKW9PfALHjo7a0swKSeydEyksCiRrUstqnPK2g6jia8gBiPjkg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.language@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.language/-/icons.language-3.0.0-alpha.2.tgz#cbf434266b0e9192d8a1970ee6f6b13e353bee27"
+  integrity sha512-LvCk3DzZnajKyDiCGr6NrEkEFNEwCasNhFMCeAuH3IJv4H1HYZx1X2VJjgoQMaxxCstsu2kORdGlSNy3Tgx3Rg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.leaf@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.leaf/-/icons.leaf-3.0.0-alpha.2.tgz#9d40cbb88c4ad67edc90fd33cf4bcbb8762c3641"
+  integrity sha512-nQyVunf1Zex4Bdqn2TaVH2usKQLTi3bp7i4hhtxoblipMmDeBGbV5RT3OSAem4JHmqn/WL6mZ4J1rbh8PVk7tQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.left@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.left/-/icons.left-3.0.0-alpha.2.tgz#ce89ab2f5a2ff46538f5afd450423536e901c395"
+  integrity sha512-1zUoiZLMVnIQrgbjAIHhzidOHgAUrYFBCh/Cc+GrtGl8KhN61HKTMit06yvfs5fSAZm4Uz0oBnoXOEmhSVaSRg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.line_chart@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.line_chart/-/icons.line_chart-3.0.0-alpha.2.tgz#bf27c46a1b231c7e1a0af87e1a6fe20f683f11c6"
+  integrity sha512-yBmDG7ds27ZHJwNn49aseWs0iBWyWCqJmN63+a7oONu0f3TTYxz6vEM8C/waL+piACGCxy4GNMVbA+wdjgEBpg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.link@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.link/-/icons.link-3.0.0-alpha.2.tgz#c992b4c02083206714957825379adf7991974047"
+  integrity sha512-WigyL1smqJt6QOwd1rWVkRCfvj8sRUU63pwB9N8PN2U/GjzNCi2694ZSCntL2PXgrucvr2rrCEPN8A5VOJbbkg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.linkedin@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.linkedin/-/icons.linkedin-3.0.0-alpha.2.tgz#8eb935cfa29fd4a654ca7446e80dbcc5772d89d8"
+  integrity sha512-dMBlv6VuU7dXjGW6ZSRd3lmzM9wyV4rcZJgP93/pWXEC/77+vTNeRDK5bMwJqJ9FALXZ0txFfKB2y5FMqZL94Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.location@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.location/-/icons.location-3.0.0-alpha.2.tgz#827a39822efeaba3a97a7a5fc703239770c67199"
+  integrity sha512-QfjIgaKb2v49XYetZNybydYDPu4PGvmvWeKjiPSLpPfAzm88T/nz1I6RuvbZpjlyxaGODp6BpUdquMU1K8SCSw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.lock@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.lock/-/icons.lock-3.0.0-alpha.2.tgz#068db2c64844e6d1fb0c83c62319a9545477ccc1"
+  integrity sha512-PUFg4HVaEvZ0yQfpk8H55d4aTRrfU+xeDoCv8GA84Qupo+l6E/Y7+jEBgbujJG3XWKyZcSG0Yk7b6Lt7zLLa1w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.lock_rounded@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.lock_rounded/-/icons.lock_rounded-3.0.0-alpha.2.tgz#1dee009886f8e2bb6d8660d8e0bf63a6f5cb43e0"
+  integrity sha512-lVnEv19KJkjnLN2BJG1OnlVdyyrEVsOqNiZgJ3ly7kS+Fj7MDLIoaLwBr9G2PqRnMlP/dBuzPOG7VLHXr5KvKw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.log_out@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.log_out/-/icons.log_out-3.0.0-alpha.2.tgz#cd40384e1e4b7d611cd30d124e20269dcb6749e3"
+  integrity sha512-VMGI62fTi0yVFvQuVSszuaSd4rtW2o8dX1L7vRtCb2a9Jo6VVfxek3kaicAcazoEbiMRtoKdDW3QBYpsG8nlZw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.male@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.male/-/icons.male-3.0.0-alpha.2.tgz#95bc34948054eb9d5dbb674f197bd507c128a22b"
+  integrity sha512-hsY5C/BqLVOJvqo1mittgHZMl1ONCvS/6VI4QuX+v/W1QjmbWmeZK6mk7H05AaRvDHb00/dv4bcA0hKQg3KHBg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.mansanory@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.mansanory/-/icons.mansanory-3.0.0-alpha.2.tgz#9c040d188710630e6992d45f049d7164828252e7"
+  integrity sha512-fKfQ//lWLgYGSzUHN5s4Pv/agZWgkap/WaAXAfXx3z+gmJ38Ap8U0+IhfSJLxoA53j615Je9PGQkOZ+y2cZdcw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.map@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.map/-/icons.map-3.0.0-alpha.2.tgz#7ddb4a7f1f92c4fd838f69336932af9e7c4627ae"
+  integrity sha512-LB47n1tN/N9YzzUEWLmwi09LtE51C6w0sN1g8nvgFNiF5j1UgTNeqHE8Omq/LnvxE/Jx6cKNB/e8rHxZUUC6Dw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.megaphone@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.megaphone/-/icons.megaphone-3.0.0-alpha.2.tgz#5cbef488259cd8e02fbd8a9bc8d613120ababbaa"
+  integrity sha512-iCJI54tSU99F7cJIQ7FtDw9YEXFfmeqzUKPw9zRKYL52l6pGVU4luXewEzLBg7vrKZvBSsnD+vw6uQhZv5cf0g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.mention@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.mention/-/icons.mention-3.0.0-alpha.2.tgz#256511f0cf243e679e2a7a7aac8693f406356e83"
+  integrity sha512-Ns+KIzMrnhBZLuQH5SLDdwpCFdA2xxn8cxH8dezkfi9HORgKbAB80+i6R93iUQeVr7J2iuShvW6BqVYGzH/F7Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.menu@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.menu/-/icons.menu-3.0.0-alpha.2.tgz#ab3e1c0396ebd901f72a4aa99013f006b1aaf770"
+  integrity sha512-tJ16aX56m6YEHAZsTRXAEEo+906IjKPvb7fPA9hnvMAJKC4xQIBtxk7uwmhy8phjHvHffnmT+CHCBpqKKDXccw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.mic@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.mic/-/icons.mic-3.0.0-alpha.2.tgz#348863e72b2af64a1e28007474adf27442f696a7"
+  integrity sha512-jL/LQmiD9eJRJDFXBazsi6rs9CHEA+xd8aqHB0eGYIeMU7ylsz94IUGg5Gugl8KbNBtDTRIL+2TSEFyJlsvF2A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.microship@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.microship/-/icons.microship-3.0.0-alpha.2.tgz#4b3326be35b4fb2a8746db7dca2a72eb90e2febf"
+  integrity sha512-5XI8O8vmodlW5vBJWvOmTciSr85iws+D7Agcu+3Gzz9TJDose/hDveW2wCl+3pVqYepLYk92r2pAv4ERfU/8Gw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.money@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.money/-/icons.money-3.0.0-alpha.2.tgz#d52d53a2050e422cf5ab41855801056cf9580f35"
+  integrity sha512-5l1VkdsLR/YTBzgQbMcy/+NHO1Qew+4xrDQzsM98LE/guADtOPqjdvphuwzzUXG0WVRljll5c9D+sGxCAFAYDQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.more@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.more/-/icons.more-3.0.0-alpha.2.tgz#5deb7a583c59af55e06aebd0a732923e9ca2aba2"
+  integrity sha512-t6zBM+THTW3vBFYSiK6TCgahtx11PVMilG4W1gtwkTAuK0Vev4alcCZtf/InpS9HwknEFjMFcg+54LqX7MjmFg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.mountain@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.mountain/-/icons.mountain-3.0.0-alpha.2.tgz#7d08ddba28605b823d9c9a62946259f5bd064389"
+  integrity sha512-sw+iy9RDZF4FOcy6PHSjlL7A8MVjLv9fZIjYB9InxvY3ybfdVOYFN2wARnbkSrtqxbD0Z/expmTrGWXoaZqnyg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.music@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.music/-/icons.music-3.0.0-alpha.2.tgz#0ff93c5e18937da9b6b9b634972bdb6b588702f5"
+  integrity sha512-2++kn8GGYv2yJ/raPxrwSHPQf/QNXmDSKbH7wdNSvGDpIvCORYjTfuT2SBCIJdtCAqAkR9yQPYcE42mTNTovaA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.negative@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.negative/-/icons.negative-3.0.0-alpha.2.tgz#72b65421d7c2a4bf2880c7b1e71169e3a3f2d0e8"
+  integrity sha512-vHeA4jYAo+UFpiL9UqsqdyE6QgiUVkVQO/Cctmf9gyMGFRRX7BYecNF45Lw6YHWlytm/4UfCMb8KazRuVRiIBA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.negative_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.negative_outline/-/icons.negative_outline-3.0.0-alpha.2.tgz#fc366f2e36c4f0974b9dcd7e93d687543c7f89f0"
+  integrity sha512-ZPUx+qLR8seR3ql777zlSoFCVhWmzVlgPk/ATVkTphstJea0QsioqMHlUNG7AIZGCtlQtAcAs6/GROspp0j8uA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.negative_straight@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.negative_straight/-/icons.negative_straight-3.0.0-alpha.2.tgz#527efb79040dc9be71d6fb7f167cdbc81e996df0"
+  integrity sha512-5+EjGq5YXyc05uUb8Vw7wmZzmy3o+jsN70IaKA578cDsPo9Nfw2foW7xd0dlrCHBDGoJmn7Ucw/kvKYZqtFDhg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.new_candidate@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.new_candidate/-/icons.new_candidate-3.0.0-alpha.2.tgz#d2a266f47223cb286cde82151e6e3c2045bd6b88"
+  integrity sha512-2m14cLxh/vD23foMU8pRBkJO0k70bZplEzrNdpKHNetILpvwbs4ywvjuG5aYh8Kr1BKZevLBJIIzXvQOEPZy0A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.notification@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.notification/-/icons.notification-3.0.0-alpha.2.tgz#31bf46224ba57661fbdfaf4b62d0971af1bb12e9"
+  integrity sha512-9a47nox5M8Y31gGaRHAXa/W6ivmQ3P7AJ6W1CH91eQTYMQnju8JwsTbjjH5oV/4c7ih9BJMCy5xktbYzWN6ntQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.npm@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.npm/-/icons.npm-3.0.0-alpha.2.tgz#4d858b3e93c48f2d24d8662338a36399084faef8"
+  integrity sha512-RvsnAF1eHejrWfK8bB6LuhCNvC1ZPmATbU3D/2OHp/jRC9NurzxDlYEHirQ5NRqb1TYmGVrot0OnMXtl3QlyZQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.offer_status@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.offer_status/-/icons.offer_status-3.0.0-alpha.2.tgz#bf7e956faf9e4944acf6513e7f79a21f521d07fa"
+  integrity sha512-9AMSzksDWmLAu+/5ReRFDktrjp4xCOSrwWZmVLhrFKV3P+qZpMcXPCd7RE42yK358yk6cgG7knx93c3V1MO7bg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.office@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.office/-/icons.office-3.0.0-alpha.2.tgz#dd096899a1dacc66b5027bdfb9a26f377bdcc3e7"
+  integrity sha512-h8kS8CZ4eIbRkiXOcGjyKYfTtK3A2JwNXbtOYY0AM/cyzJ4bEfnCtS3bktrpnfwz2R41I5kRxzsA48SA8yZlKg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.ordered_list@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.ordered_list/-/icons.ordered_list-3.0.0-alpha.2.tgz#434e2dfd0248a50e7aded75d97d1633d50aea030"
+  integrity sha512-51TFb9o+tiOmQx/a4BGmsKZ5bB5bfPazT4TtaxZZlVU1Pkk0hBf63gZpPdpGw0xyYn6MjFMTy+JyD61gQKcBkQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.origine@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.origine/-/icons.origine-3.0.0-alpha.2.tgz#36539fe149704b6a48b41e7e0eea49a1e2568988"
+  integrity sha512-FhWQ/hDxRLdEHRvsCArT2QsUmIPd2PcuGkI2Z0Jhr/wiCEK+vT+8eGYs70Glnizd13BplZexQcDeBepg0RtOeg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.paperplane@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.paperplane/-/icons.paperplane-3.0.0-alpha.2.tgz#612c3f44d635a3758a9e6ebd5dcbf97018091fc1"
+  integrity sha512-l2GOrHd2ZZ80iZJZUlRHqVnNSjNohSCixHhSIYgaBWNVPT8gYRnmLnPCX9tL+zHwxomq3fh5VaL+Dz3HD5L0EQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.pdf@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.pdf/-/icons.pdf-3.0.0-alpha.2.tgz#a803f45bc7e1d4b424bff95dd2382c550d2512ae"
+  integrity sha512-YhvIIkLoXtF7jNV2KxA4Qx41sAdT2TuhZxm6Wr0WAwdzan/CgjJCIdCHtF+sb2amfVEXdv4AjKw3WX6JExDxcg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.pencil@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.pencil/-/icons.pencil-3.0.0-alpha.2.tgz#3cf53a85325bc32cb919bcfa2b512382a48a6abe"
+  integrity sha512-TXc5UGt0aMmyTIRDVyy6c1JJsQEMev2TkLDXe0MDRF6R4MzfnhYszOwkGvZeKB7Abrx42kJy/g9c2ub/xpuibw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.phone@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.phone/-/icons.phone-3.0.0-alpha.2.tgz#a657ffd2b4101299569cf8be10048d155e3c4ea8"
+  integrity sha512-/K8VL7nD8xz9Jo65yMxydJaEBIbOfH+68ni9jgTEdl+1FXHzsl5Z+f0xr5lQoZS5rudHoMTWpa7rUhnPUKX3mw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.phone_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.phone_outline/-/icons.phone_outline-3.0.0-alpha.2.tgz#3f1406481eb96f98f0134ae382caaa1315638c9d"
+  integrity sha512-1DcfEYRNMkOYn/aXCsmqFE4SZWvElZBtmMKIbFn4bG6eD2Nst2g4QGkhVdn9ToxHuK+HkJwr1IK7pLpYywywog==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.pictures@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.pictures/-/icons.pictures-3.0.0-alpha.2.tgz#23c8b69f1b5ff425e74cf1b82f52ccb5e1e17bc9"
+  integrity sha512-TuqNRXhcS8vtjX/w2tAOdasfkB8zS0cr1vKPO7ZTxkY5F9kEgVf2Y046oa/o4/3GcK3lptNBuoNI09StBuIfGA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.piechart@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.piechart/-/icons.piechart-3.0.0-alpha.2.tgz#d1102ee38d2f2c17c3b81ea496dbd2c5b39b4c2f"
+  integrity sha512-/FLvEUTVKHCPqWFW+i2v3PE4zskOrR0ZbQnPt9WX4m2Dmid4WQfC+hkgDQt78FwthXQIniq8cJS6Sy/Xsl7eCw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.pin@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.pin/-/icons.pin-3.0.0-alpha.2.tgz#7c628a5f59a685092dce69cc15406bc15ee4e5a5"
+  integrity sha512-Q6SJe+NGXPu1Os65cwvIuYoNkDFpaTnekKwZXvAL09/jAGPaEAJgfiytSjPBrM2ZPiSqMbJi7fpCHmg5QchQ8g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.pinterest@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.pinterest/-/icons.pinterest-3.0.0-alpha.2.tgz#b59ebe758664164b542206accb44592d47fbdd44"
+  integrity sha512-ZS2EYFpYI/9dKeIMXt1aycqeOcQNu1ZnMvDbH3qp9GmLYTGYAoEOKNA87DSKfVM8FJ0DoL14yLVvMOdNFwCHqA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.pizza@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.pizza/-/icons.pizza-3.0.0-alpha.2.tgz#73c8d1183239a6be68491e7c6a3d0a82f57dc7de"
+  integrity sha512-wA+C//KdBzPLEQpzbjYp70+8NBukPk8yoqDCJsBffnlov66SSfsB4CfGrrKMuB1rYulLK3L0WSBaOKC4TsyL/A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.play@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.play/-/icons.play-3.0.0-alpha.2.tgz#a4c1e29b497970c37b0f7ebf00252acbf329bd52"
+  integrity sha512-sxoZEcrP5GbyC3ZPnsJdbP5dS911u9GWxBMzg38MuSASpNDZuXlqd6eGf9kEe0eIUQy36qWqeBHVCwg274nsYQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.play_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.play_outline/-/icons.play_outline-3.0.0-alpha.2.tgz#a3781b867d9d77e40872a8413d5e9536f4843097"
+  integrity sha512-PY9i3SEBDmUis44oafQbfqss7fxzPkqcEgV+GlNE1Lfh9hqgaGkiVQYkznZ186iuneePVTwdX7emTXlG89ZD5Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.png@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.png/-/icons.png-3.0.0-alpha.2.tgz#08a8e8c055b5af6948cbb495161f2f1512102b13"
+  integrity sha512-sXL5iYDBsJ9pAogIZfSScGljIY21tk/ZDNBqqcO76mWqFiw9C9nqHijW+X4FqijcPi2FfzFtQP3kAHLg0YoK8A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.podcast@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.podcast/-/icons.podcast-3.0.0-alpha.2.tgz#2725b99ffa90893b737a5ec914a068a48b602955"
+  integrity sha512-Ap1ucwrUt9qCMMq0HieF5WlSzRE3PGyV7wNNFpV0u77Vd9zoRwdZItZHvYP/uZjxvia4OAjMdyEuvR9xhpNSrw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.positive@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.positive/-/icons.positive-3.0.0-alpha.2.tgz#9c205b0c36f57934bda5bb2816fe486a9a556ad1"
+  integrity sha512-Sz278FIeW0p5S3Rg1Sv8BVMZd8iIDrByj4Jwzr0u6rjAdI7Qf+CfUloAJKHq8woKcUgpJ3iqH5AnlVzsRV00Mg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.positive_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.positive_outline/-/icons.positive_outline-3.0.0-alpha.2.tgz#cdf846fdef3d6d9d578410f8f33976f990f4c5c8"
+  integrity sha512-Zk9ocmIyWfFej/iosiwWlnaL+casDBL2us9LzvZEVFpgYi2DkcKHwSqlGUe16/eY+z5GdzKSBuBdsj1EMbZztg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.positive_straight@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.positive_straight/-/icons.positive_straight-3.0.0-alpha.2.tgz#18b9bf8fa348878911ec86c0c2c5414bcbeacb3b"
+  integrity sha512-I9pkoRLZUW1IphXWryYj+MOVo3/urK1xhGiU5nc9486CL9EYIwS5B+pyoHqbgv68aoHkGOw/zCR8wG8m6KQwRA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.ppt@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.ppt/-/icons.ppt-3.0.0-alpha.2.tgz#bed83c2163db9b0d42d28ef3d2c3a65a55429fd4"
+  integrity sha512-ffamp/NCLjJ53oWHQ4b699VtA49cP8iw3wphWtEeydiaHf+32ittP6v/L2Tyz8fKvTlgUlRzEwHItfhMUzeFyw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.print@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.print/-/icons.print-3.0.0-alpha.2.tgz#3cfe014adb3c61ac0b7456a1448c1023190ffe72"
+  integrity sha512-whYonboDDx2wAxVw/YC2cD2iR7MECeR6Eyp2XVNtjgZfehf6FkG5Zgl1HjyEB8fAf3Cz4dLLPjd7I7e/t8iO2Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.promote@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.promote/-/icons.promote-3.0.0-alpha.2.tgz#5ee3157b830c49227cc89df75111ffbe83a4dc01"
+  integrity sha512-I8IWJqI1hKzCrFMaF4Yqg63odvl/k2xJiYp5QCJMEmIvKz8sF+OxIt99A0UJNDfskkLKN7lQWSN00R9NvUtSpw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.puzzle@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.puzzle/-/icons.puzzle-3.0.0-alpha.2.tgz#9c04f422cb02a25bfbb49f4bf114b79d6c4d9302"
+  integrity sha512-hMl38LAeres20bGABKcyk3YTLl4h688/BGpeT+kYUcSofhAIBTfrLpR1XJ3f/5WVhIw9P36cLqB//Fiw37RFGQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.puzzle_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.puzzle_outline/-/icons.puzzle_outline-3.0.0-alpha.2.tgz#d4896d3982fda17851211838916f87f21a0f9ab8"
+  integrity sha512-jPodl5OZgFYCpB6CrZqX/HJit5syRnMtwyGXRx27icQGFwTSWSG7P77ZLf7uS0QDb26/PMkvwXVwUAIHwOqhpQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.question@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.question/-/icons.question-3.0.0-alpha.2.tgz#26fa1994dee58a3d3bb7ae17bf484d377468d5ff"
+  integrity sha512-107qMGo6egd/MJbPBjPG7mr/S2pyFGk7MFJrW/rKV5ksGE+WmkOdzb6Smu0K2OvTzS3NKxJvqeNOPV5z3Y3s3Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.questions@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.questions/-/icons.questions-3.0.0-alpha.2.tgz#1c46e669c35995f0b07db41cf013c2af05e212ec"
+  integrity sha512-FysdPxl3V4eZHtsVXFGsIpcqSfhtwD/in3OLGzSIKkA0L41duXdL2SFVHznUiyhC04o3y40MQAupvgP3H+/fzw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.quote@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.quote/-/icons.quote-3.0.0-alpha.2.tgz#74eb51633547b5023506069600dee95f22c6a883"
+  integrity sha512-9diM5jrZbBI6JKV2pRS24ZzrBn3kZcvN98Q4ay91EAOkRy/Z/lf3+JESZTb2Qbcc4ZudrrdneePWmHWrWJ8Ezg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.refresh@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.refresh/-/icons.refresh-3.0.0-alpha.2.tgz#26a38825b6aaf5f2ab7a4d75518dcc1ce7ffd1d4"
+  integrity sha512-7GaHnk/cmxAmGbjtAMTYXB2vz3go3m/geFyNXTbEVoTBUi9pndSic1NFL6/W+uHwKvg/PtvEhNQoBsvXUeqVgA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.refuse_candidate@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.refuse_candidate/-/icons.refuse_candidate-3.0.0-alpha.2.tgz#ab929a8d6c1245e3dcac45fa86c73b465f1f552a"
+  integrity sha512-lt70Ohm4XSnRhVhu+Vb09yoL4fKYjBnlZtmTIUw4hexdhVbeooqAdufGX09v/qbJRf/ocunNUOp8LBc7IB3P4w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.remote@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.remote/-/icons.remote-3.0.0-alpha.2.tgz#978006273a782af68e21ca3e667e3a8c3d54469d"
+  integrity sha512-Iuik2vi245/rKNCqlcuHLsxeIIF7xH4FQHYbPSiBBprxQ1NFJVEXvXseY2gqlwgYgf+xdbI2nrfgHmPR28VAyw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.remove@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.remove/-/icons.remove-3.0.0-alpha.2.tgz#7a87f1a5be381632d8dcbeec69bc9209722d67f1"
+  integrity sha512-p6bmmG95lQn8g77r6kbMK4tpFwOS4yvnEAVaE51mOD0sLHdbSjfbHAyBuc/eYyc9bnVs23kXBValJV+V3OVyMA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.reset@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.reset/-/icons.reset-3.0.0-alpha.2.tgz#ddde16286d6bb6d450acd16e890a96283d3847a6"
+  integrity sha512-DDe+1bolvN8znriTZIw3N/mUHxpev3sf3qi6Sy3y3UZken7xrm4JPr+CkRHGDnwum6xJuTS372cATLVIzdxrKA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.resume@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.resume/-/icons.resume-3.0.0-alpha.2.tgz#d1fab1eda26b5ef526eed5c0d7ec547ed32778a5"
+  integrity sha512-P65uTQ90xd8+lbd5wFP6cya6BDHUPbOajJeBd/CeeTpszek74Dio3hslPEIXKBqIEKC4Yn1VYjhFLAvCEvAIaA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.review@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.review/-/icons.review-3.0.0-alpha.2.tgz#c15d0615e3d4254d789946dde2a454db019a15a4"
+  integrity sha512-4RRKB1ihZEEv0aemmLTwsGlSCByKxOrDAns0vB/AfmRmxoFGyBucT3E8AGG7pLsS0e4WCBgWjwBhLsBqy4ywVw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.review_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.review_outline/-/icons.review_outline-3.0.0-alpha.2.tgz#5fed62dc51924b40722a396e421d209215a7ce80"
+  integrity sha512-9OtIxQ0+hMVGeL5bXKYYskurW2/tgiIT3LFDPTR+zfXtWMTDkPtdFu6PTr05+1zfVfw8gyvGW5jjWVxlqUnERg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.right@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.right/-/icons.right-3.0.0-alpha.2.tgz#13fff2e875fc866c9b2e4c232014b6b72921d924"
+  integrity sha512-cn3Sdiwz7eiSaybBDAYJ4gkJoA/P+yet10Brk7V7Bgx39GCZE3AQMeBv+DrIocMQvOKUjzlyvq2sMUaVBq5W7g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.salary@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.salary/-/icons.salary-3.0.0-alpha.2.tgz#418e31cd3a15d601166bce0c9cd3a38384a73749"
+  integrity sha512-16/4Z3YTduBjE/NMvqiqoy/cH+8XSKO4p5R5R+dOaZ5N3Ejg/3UC6xKEB4sVrIXcccdTz0UM+lCB/vrApHvZIg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.save@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.save/-/icons.save-3.0.0-alpha.2.tgz#33c2190a4a30e055101de44634df3aceeedf3a8e"
+  integrity sha512-CVQrWGAnWP+GfnGubOZklh8w6ENNwtT6vmJdzkwF+LC2ttVOxDzQauGH9r2OBkPVpzXt9fIpBAKvij7mxwT1Fw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.search@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.search/-/icons.search-3.0.0-alpha.2.tgz#93816d27280714d818c0c9dbff3a90e01e3d10b7"
+  integrity sha512-31GgQTjyUkqhA6EXfbtXbO2flhlkb0wbexZ1zpuE8Xum6ct5UsGu7riNAAuVs3/ANzq7loJyVJW0O9wqUufPjw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.search_people@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.search_people/-/icons.search_people-3.0.0-alpha.2.tgz#3f1701bf172b695d32884018eee0abd93f24a723"
+  integrity sha512-nn67Lo0spC/e8RubV91J5n1jMS40tQKin7mEKcLooaXj3bgSpyiT0tuNAD4BqYXCKrnCmQZvySBhT1qK/d/SxA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.settings@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.settings/-/icons.settings-3.0.0-alpha.2.tgz#64b0a38e9364d7a297aebfbb789b9e3d7ba0b3e8"
+  integrity sha512-Pmi4eg9Jr7iy0CUQ6PMwLYQ8HKDn95dJnO9C+r+2vYKD3qYsrD/FqbF8mRDASmf7XQDdRdHMMn88zeifC0BQ1w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.share1@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.share1/-/icons.share1-3.0.0-alpha.2.tgz#1659e2b93be2db7f64ee4cd17bea97a7a75aa568"
+  integrity sha512-J5eHjKWvgTHsB5TJs/R+ptTaT2mxK6cw2XmUQVVC51lFbaQqktuVHIqpM8VWo4nF4y+P4IHphRs0md6gTvITbg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.share2@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.share2/-/icons.share2-3.0.0-alpha.2.tgz#9c6ac471d00c209112f4255687aa6a09b660e024"
+  integrity sha512-DvIFtUmhDNJH0JTASWsmhntncUuJggL7+LKl+5cupeXAr5CryvyvS2RtfWwpIhCKOD3sgjxJ8EWV+wRjW2MjAw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.shield@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.shield/-/icons.shield-3.0.0-alpha.2.tgz#94f4f5b0efaa3a0e84c932bf43510c8df5e125a7"
+  integrity sha512-UmSUkeDgNulpNZJGCH107L+LnXVFKuSTbsRSalxPrH1v9YbdBos7k70AtQuuCRn7lOdv8hzO7IxSAloHbOxFeQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.show@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.show/-/icons.show-3.0.0-alpha.2.tgz#2ff4dde0cb57871b6324b0437a09a7eca18fdc63"
+  integrity sha512-/RfKgf1MnX7gJSdRM7NH9DldrIZsDKKQz6XdqmyiFsUZSMokq51LDyhDPVXj2RJ1OwZRb/ISB7auR+XXCnM8Ig==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.source@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.source/-/icons.source-3.0.0-alpha.2.tgz#8128b26447fa802d3b4b886e861bfc0df983414a"
+  integrity sha512-MONXM3h7qJaKUhLjerRYYABnTL+GEgG2eBrTqyydAsbPKScUJhmSzTwAelYivCmBl5VSrd+A2kL5p3igpzbAJg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.spanner@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.spanner/-/icons.spanner-3.0.0-alpha.2.tgz#7cbb408dffa44da2b10fcd75609d15a8f38fc87a"
+  integrity sha512-eSHHliHYLSf8mgJm4B+kqt2thmuwQQVSM1g0ltjoRcuJ/igBw6TLB0I/6u4V/9tUSuXGf9iiXdAg+HKGRdvoHA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.stackoverflow@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.stackoverflow/-/icons.stackoverflow-3.0.0-alpha.2.tgz#e64cd531a16d83e141dcd2111abcb63b1a3ad70a"
+  integrity sha512-sp3rRPBuB47Kzm3SeBStaX1/dZuwZEkFqjv17FgXqFKl9iMAfMNQz9bY+mDcMva/OOQjyo2nGkjiTxns0nM1rw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.stackserver@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.stackserver/-/icons.stackserver-3.0.0-alpha.2.tgz#e796d745aadb2cef9775a45b334ffe635599b741"
+  integrity sha512-TR3BBhXvkAxEPV240GapYMHS0dPW2pK4VTo9MKtpawxvJTVnUGO6QERsMJDqdQUgkczmyEezsIgrsCZ0eQbYqg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.star@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.star/-/icons.star-3.0.0-alpha.2.tgz#77847d11c0f183d91d2eb3dcae6c62b954237a2e"
+  integrity sha512-O2VHh8eB2iU5dfJuNPAOmwbmp2T8k2o/AGrhybPrx5X9mPYyliRIvNi3QaBtNJsEKlK1qoPQAKNnc0v7ikGF/Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.star_outline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.star_outline/-/icons.star_outline-3.0.0-alpha.2.tgz#75261f3df748043efe57b7465810510eb76345c1"
+  integrity sha512-MsxjKXf2CFMKA53i8iXq2JFOt73c7AdqQR+3mG7xc67rqQvmD6Yka0aGhS1DxMSO7pTdCVfsRx/qNvXz2xYXHA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.strikethrough@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.strikethrough/-/icons.strikethrough-3.0.0-alpha.2.tgz#fcb2456d037541219d1062f321e78c8e0cb810d7"
+  integrity sha512-3pIz0AvT/lqDng0uWbMEz3IZ9/JFd5EJb0fFYZBFDZ4Z34Revhy6r2SNyjyBeTMtyM4uj+9S/+FIn5mPMfAidQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.subtitle@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.subtitle/-/icons.subtitle-3.0.0-alpha.2.tgz#7b4e0f156e5a2fa1e5b074e7f266cbe3e01ca4fc"
+  integrity sha512-u6R8uyvrAOgTuOUeBP9Kvw/2kIDnXHttwfge3IEnX6yq0pyfe27C61GhTZW8h7oXFreEh7/DItGH98JUxchjEQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.suitcase@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.suitcase/-/icons.suitcase-3.0.0-alpha.2.tgz#a6f908ea28770e8fcdb482e469192c49a8e4a86b"
+  integrity sha512-jTZvvQb7jSy+FiYMIzaCYOab+Og74nBdTl4tY/wUPrsF0R9Vb2Bas206nbQgw0AYYGMT4Y1u/xuvVTw30xtzSg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.sun@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.sun/-/icons.sun-3.0.0-alpha.2.tgz#f8f4dfff0c37669015a8edae8211af9b6e86caf0"
+  integrity sha512-x42OcHBWOnyurXsMQGDAomHcz0k50VPI/KtueFDROdWPzrYk+jaJHdawuaXGZQ69+maifA/mX5r+4nh/f86Rgg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.svg@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.svg/-/icons.svg-3.0.0-alpha.2.tgz#93b23e39de4fdd44c242f902317cd5da28939abb"
+  integrity sha512-SFzTaJOEMHWBmnBBh1OECBokvRIXKwi0Xn5S9y6a5VeFpzVQhd0oQ38TyakOLWoROytRMl94UIihv6gAVvNg8w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table/-/icons.table-3.0.0-alpha.2.tgz#544f72bea6492f6cb0a1959b28f349beaca75eb1"
+  integrity sha512-7QkVCtWR5xcu1YdfyXb6OaIqJPawSfbQyr+J9hjVIHWLkHdhzQMs0TB3na8+YQiAFVXlVFGq5HwfGQ1IFvJpSw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_column_add_after@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_column_add_after/-/icons.table_column_add_after-3.0.0-alpha.2.tgz#7ed1a41442e220f38d5012571ac1e3196aa5be43"
+  integrity sha512-kLF12tUBUsSXfAPhGmF22AG1+pk9jrec1OwpWTgmpgRe0MkaZp8KUwwV+34YgFUrESuk8ZLslwA8wN+AR185Ew==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_column_add_before@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_column_add_before/-/icons.table_column_add_before-3.0.0-alpha.2.tgz#804e170fd9fd3bad69c502683f6a19c8b4627ccb"
+  integrity sha512-ovrCKm1KX/U/4h99ygmofTeF3Mc8PNZbuADJIG3LWBrn6ztGQHsC8rgk/ftB3pS2v1EaUKnXPLNBBDjO9g0mJg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_column_remove@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_column_remove/-/icons.table_column_remove-3.0.0-alpha.2.tgz#dfa96365dbe32e848f008ac8f327b538f693355a"
+  integrity sha512-Cdgl/ecX2yVGbch4REbJQkpdrftm9Wve0+s9d81hRXSdt9o7soX/5CCM7IcsKuGwEz0wAsvQ2Dc/NZ42cz1JGg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_delete@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_delete/-/icons.table_delete-3.0.0-alpha.2.tgz#ef29c258ec69324e6843f8af3f6c6df274e4c539"
+  integrity sha512-YOve4vS9oneWsjg5D19iiErpm8YgRJ27DpufqOQerUmj/28s7922CCTDzpX1vsDxXQRfoSmuhxKHnE0/YqZmLQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_divide@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_divide/-/icons.table_divide-3.0.0-alpha.2.tgz#416e7470da1c3085d12b13aaa07509e61cdb364c"
+  integrity sha512-wtgkQqnsgRPv2/dQ70e7fETlnz64g7o10vozjEK4DTJN1tFYJ93MnNI/4tr1A0/mQxpL8anDVqkEtf7KKxBRJw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_merge_cells@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_merge_cells/-/icons.table_merge_cells-3.0.0-alpha.2.tgz#39f3cf5e82d88267d909bda53bc95e4e34f860e5"
+  integrity sha512-lmxfZ3xQSlRwTk+oniXdTK4Fg9++Ueumnfp90g3mzorqkyIlU5caMFrE9EvBQoZiM1CA7shZdgeZb+7dY/uwpw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_row_add_above@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_row_add_above/-/icons.table_row_add_above-3.0.0-alpha.2.tgz#b2b0bf6c633e94a2ba5440fa2274c31dd781d64b"
+  integrity sha512-RplcR1loNHu4x5q/Gu/PFvtfmPdpBh6REIeqo6vtYMPp/OHVJUIuqYB77ggCouQmweu/pZ9MWFvGIqqezQuYqw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_row_add_below@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_row_add_below/-/icons.table_row_add_below-3.0.0-alpha.2.tgz#8a7c1a8f0f53a04e59de9527a6ee622b92eee442"
+  integrity sha512-MdRipvrb6kvDn+4FbrtbIYlAwFsUchTrAR6t8574e8gSigmY7BcQkcU2MnmyAEMnkczt5zfP43+ZMZnhNzPG/Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.table_row_remove@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.table_row_remove/-/icons.table_row_remove-3.0.0-alpha.2.tgz#97d8c0e06c4c3945ec457f917de494d1aeda66f8"
+  integrity sha512-NvVCAjPIxxFSUcPK0lGlColvwlWJpe5R1B9BwNuGiYZFtzTEPK8fXhJtrlZ/cd/qX+lPkJ257VWlwKGUP/tX3Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.tag@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.tag/-/icons.tag-3.0.0-alpha.2.tgz#b64e3f1d415710c7d2b87650816566028b773284"
+  integrity sha512-ZHdi5jq8X7auM+4L7kw6iTo1ZfNEXdnqWEKf2s+li4iuG9QyztW86E2OXqy5V7KM49/zjy0JiR8TbX3Exrdh6g==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.tags@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.tags/-/icons.tags-3.0.0-alpha.2.tgz#d47904acd100e693420aa9e60d3f6327c2337eba"
+  integrity sha512-VgvHhbc1wHMZtDF/oYlPX8+WJB0zrhhiRKE6lLX5n6IP/ybls5iFgZ16tsVLUkRzbJDj2+ew4o3Nw17Y+otjSQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.target@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.target/-/icons.target-3.0.0-alpha.2.tgz#0d5cb9b7c41a526c2be03c3c3ab59e83533654a2"
+  integrity sha512-sk93L8c+G1h6L/HzN2WcqwMtpnfluAoWXa3/T+uMLOSxcYAvnclHcnHgMHZou4eGUtIMwWUjQcdibcOxbNmJ+A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.teepee@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.teepee/-/icons.teepee-3.0.0-alpha.2.tgz#0d3a64e5a9df3767746cbb15ffe3dbaaa57676b2"
+  integrity sha512-dOr7mUnx3gcr49etiCppKAvS400WM19W+Kz+iBwZE3E1N1z++HjNCWFjjNMMoP+04kApcxH9srL46fEqnkdlEQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.thumbup@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.thumbup/-/icons.thumbup-3.0.0-alpha.2.tgz#83d12f5798a5e98030fe941fabdfe38f78c278b1"
+  integrity sha512-sn1S6tPWqI/p9IJU13DJUF/0zvCOQE2Y7FncOtimJgHX3zlCq5YC8XLymQMH9tcgRL45379wk2KctEOGYAk0XA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.trash@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.trash/-/icons.trash-3.0.0-alpha.2.tgz#7d0e5249249e5ef408416fea4df20b87f89f4d69"
+  integrity sha512-C2D2DS20BCezCMPr0fMaGAtHnD42LQ6jVLdWtflm9lwtb0Cy2oXbcM4LS0e/2TW3mteaMgRka+6bVv9h0aYpRg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.tree@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.tree/-/icons.tree-3.0.0-alpha.2.tgz#7ded93e47512cf0d4a69b493e2be35cca055f1d8"
+  integrity sha512-rJ2ITCKq4AJCP4DoF2qqYxKOOOA5scQDGuLSiyghGXKDX7arVNTLrl6BexCS4xK+ysMrI8OfJiogaskrZ2SVEw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.trophy@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.trophy/-/icons.trophy-3.0.0-alpha.2.tgz#56b3050f13c4e1bea0fbae7b6278b694abbcf7a5"
+  integrity sha512-ddbaQguI6GKCN5Mlio26q6SOYYBek5EX6ZTjEHpEuBM7HQz8So/KVCMu382iigWEXHCMXit/ddnjgJUaJ1I8Wg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.ttf@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.ttf/-/icons.ttf-3.0.0-alpha.2.tgz#b7c6cc0c59b9b3e5134c9958fa21601f528eaddc"
+  integrity sha512-XeX8PydkdTpa1Qf48LF9VQXQrx6gWgL0du0fHD/DWROpSYw5bReyZ/0syfaQHODfTYo15+wy51iI9dIE/WsQNA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.twitch@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.twitch/-/icons.twitch-3.0.0-alpha.2.tgz#a608080ab3630ad9336b9259efa244f4d6601133"
+  integrity sha512-iCe/QMfq1ZfDRfxpe9xh5qooe2CC2uJM8pCxuuPuty7T0rm7DDBMgpj8wxHdiqm+maW848FedBKcIgQsGoqg3A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.twitter@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.twitter/-/icons.twitter-3.0.0-alpha.2.tgz#b8bfffc939ccd46f03bd3440752fbd89b791b479"
+  integrity sha512-DW4K1DUcSsbrXHprz3ZvfUg97jJIaJFQboRkv/O5lndvJrBY+qlX1GCAJYW2Zi6WAA7mu1nA9gaVywszbu2lWQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.txt@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.txt/-/icons.txt-3.0.0-alpha.2.tgz#251c9909f867835d94f7ae72f97b7cb4ab2f535d"
+  integrity sha512-D8gbil+Un2kHI/3Y5e+EXVH59Zinu/83qSBnoGXMAimFm/7zsRjGaFuMinwRo8YksC5rFlIBrolDWJhu8AlnPw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.type@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.type/-/icons.type-3.0.0-alpha.2.tgz#9d20eed96ad6760af77b4512446f36c6a7d73667"
+  integrity sha512-xpFJgCg6QkSBNbI2F/1KDJAeWgZHFsl1o3VQLe80KanhAOB22wbhDXyOmp6k8RztrLEskOvRenaadgWS7HSF5A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.underline@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.underline/-/icons.underline-3.0.0-alpha.2.tgz#2237a1da31f97870a9e4bb7f36eb28047f87efe8"
+  integrity sha512-8LBniR6uNTJIEAjbh8FxXnFsJotrUHxBTlmFzQbbSLIrqkSaU2Cp0jQDYBifZtxmTqhw1FM0bvFQE07tlofdBg==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.unordered_list@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.unordered_list/-/icons.unordered_list-3.0.0-alpha.2.tgz#8d4d22d8c5c253443485d7d5c0f6d865b796cfc4"
+  integrity sha512-QkFZuRDR9IPMpd+2u+TeHQQlFd+9af4A843c8WILw0vpB9oGuEwi2ao/hbRTqbteVys5J9LPKV+ib5dhD85doA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.up@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.up/-/icons.up-3.0.0-alpha.2.tgz#3836abcccdccaad34a56406a8ee1b1d554ff4f17"
+  integrity sha512-ubmTPcWmKWq0KeGyllIRlLLeuvYS972YgFsZODWbTH4LadM8VlF7aiicOtRonmGYADdsD4kkYE865UJ2S0C4KA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.update@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.update/-/icons.update-3.0.0-alpha.2.tgz#af62a397e8133b56c47b642198046be973920224"
+  integrity sha512-zhSjrgUzgXMSMdCguvx6zI3xJf2+0vIIYM6KS1cuBuoQvj7r79aFW3/7mLjeM7c6LUxDEKQsuHQxuaAAjpBP7w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.upload@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.upload/-/icons.upload-3.0.0-alpha.2.tgz#4610632d1e00001f75eaf5473ff84417e7314c98"
+  integrity sha512-6bmGo9DWrr4R/FsBsGs7bpejPbe1zieU8TMuLxuEhW7CWH+B9l8N5HDBQtlxWW9mbe9brVBm6gcBl0a8US1s2A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.video@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.video/-/icons.video-3.0.0-alpha.2.tgz#5babd5033dba6e191f987ed3ab678b08b831eebc"
+  integrity sha512-eERbYGxOfRrQ0r4jw6GJjhXWFDtCcqJjnYo0p5BJVh9c/pdKPZkszHAWEjCaWMY3Nh52FhPbdvY0MXCExCxxWA==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.video_camera@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.video_camera/-/icons.video_camera-3.0.0-alpha.2.tgz#bfdef3b5eb43dfda4ce1f2b83b10cd5826c8cc0c"
+  integrity sha512-d9T8nl/jRbCkj40VksGo1fXn5h63DyRqEKVfUO9Q0xUL/0chkY6wFTsmhIuXTE2Eu9ebLK+cjNa7f23qWL+B9A==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.video_camera_2@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.video_camera_2/-/icons.video_camera_2-3.0.0-alpha.2.tgz#34f3e3dc9e70c86d407050eae36f7d9a2cc7d955"
+  integrity sha512-wjhBLmMIz4ydb2vULM414ug3kyaMmJQl102xoOIIJu57XzeONYncMvJ3OpNa0X/AvP0zY17JggwxKTJ3tJfLVw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.woff2@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.woff2/-/icons.woff2-3.0.0-alpha.2.tgz#62c256e617b454d27d0f88ac1507f5579c12f43f"
+  integrity sha512-2AeGal3GBmSmAPHKj+IySMdBDoUbkdCoKyHBmzqEVqTN2tulB4eN9kL/w90Eq8USUddi5iWW2cOTYeFjUgHpCQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.woff@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.woff/-/icons.woff-3.0.0-alpha.2.tgz#c89b5683f82462495ad951e44a5f69ca09a53711"
+  integrity sha512-6+iiTQPECIbXksQ8lvP0M5FAR0HlODL/RSZX1wD5UV5SDbbZoVuFNH0hZftLnoNZ5Z77vA/IRiLWIsnrdU8P1w==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.write@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.write/-/icons.write-3.0.0-alpha.2.tgz#536179d5b606bdffa456e88f7fe03228efe19437"
+  integrity sha512-gtV3B41vLrr4zkoaEuKdnRruZyZIyg1s5U9F/dqTO4CY+fVC8RR6jdeK4RRIN+3+QKIYCMHNXbcfS/jWcCx14Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.xing@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.xing/-/icons.xing-3.0.0-alpha.2.tgz#b8665e7af00281c95d5d5561380ae7e38e66fac1"
+  integrity sha512-Fyi4CICuuwx0rOosH92Ctpx1vtOs9yq40xNaAHckGncD8YIGTxdGcQXDSb+arqgVL0pBsbvP/xGPx+/cRC7poQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.xls@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.xls/-/icons.xls-3.0.0-alpha.2.tgz#da1e1dd2d9c56ee706532cae96a097f84c77491e"
+  integrity sha512-aufL23FczWJbseEEyPmnwI2LRfslQDM1q5fzg+oFwKLmI8iAX5oLHXQvvaRRdrKlXTPcnSMrIdxv5aaHfDrRzQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.xlsx@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.xlsx/-/icons.xlsx-3.0.0-alpha.2.tgz#d236b68f7892bab4d5fdc9d2cccef97a0bea780f"
+  integrity sha512-nQO26uHYyn/OQKJWagUrI2OBAn/jy5cjCA9qff5ofi1ajLYDSSgfRJchprLe4Gx9uMxvS6M0OkiXDJrkJYr88Q==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.youtube@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.youtube/-/icons.youtube-3.0.0-alpha.2.tgz#0bd5a293bded4f6886a077710f0cc52002120095"
+  integrity sha512-CyaVDTzP/5GPLHnoDIZEkqO9+w1MsYK0pTdBBjl8oSWjQqxbG1lOcQ2JReU5IKv5DU0yS29IXaxu5znz7H3Gqw==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons.zip@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.zip/-/icons.zip-3.0.0-alpha.2.tgz#0fc8d4a8f2475f363613ebfe9d8739861f364964"
+  integrity sha512-Pxjsd8knMo/aJr7xyN7+Uef6n1n54o+9rJu5QMxHl521d2H0ouyiWI/sI5WkzBc7SrpS2BrvvPlUlGdNfJJ8qQ==
+  dependencies:
+    "@welcome-ui/icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/icons@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons/-/icons-3.0.0-alpha.2.tgz#3bada434d72d7efbc24d0b912f3c64291f9cdf07"
+  integrity sha512-Yd9pgD+HPdxXN4JqmjiNDFt3b+M4D2+8ILjkRrCZBdHblmB3JkIv0N2k3W/RM6mfbkc39ksHAKR/nyxLpVEjjg==
+  dependencies:
+    "@welcome-ui/icons.actions" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.activity" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.add" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.address" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.alert" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.analytics" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.anniversary" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.archive" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.aspect_ratio_fill" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.aspect_ratio_fit" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.attachment" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.avatar" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.bar_chart" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.basketball" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.behance" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.birthday" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.bold" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.book" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.book_2" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.bulb" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.bulk" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.buoy" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.burn" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.caddy" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.calcul" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.camera" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.candidate_status" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.card_view" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.celebrate" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.check" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.chevron" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.clipboard" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.clock" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.code" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.code_block" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.coffee" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.collapse" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.comment" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.comment_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.compass" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.computer" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.contract" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.copy" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.cover_letter" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.create" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.credit_card" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.crescent_moon" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.crescent_moon_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.cross" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.cross_target" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.crown" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.csv" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.date" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.department" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.details" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.diamond" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.dish" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.doc" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.docx" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.down" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.drag_and_drop" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.dribbble" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.earth" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.edit" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.education_level" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.email" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.email_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.eot" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.expand" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.expand_text" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.external_link" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.eye" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.facebook" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.factory" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.female" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.filters" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.fingerprint" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag_cs" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag_en" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag_es" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag_fr" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag_pointed" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.flag_sk" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.folder" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.gear" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.get" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.gif" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.github" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.handshake" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.hard_hat" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.hashtag" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading_1" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading_2" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading_3" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading_4" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading_5" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heading_6" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.headset" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heart" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heart_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.heart_shiny" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.house" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.in_progress_candidate" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.information" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.instagram" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.italic" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.jpeg" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.jpg" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.justice_hammer" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.kanban" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.key" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.language" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.leaf" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.left" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.line_chart" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.link" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.linkedin" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.location" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.lock" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.lock_rounded" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.log_out" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.male" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.mansanory" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.map" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.megaphone" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.mention" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.menu" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.mic" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.microship" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.money" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.more" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.mountain" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.music" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.negative" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.negative_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.negative_straight" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.new_candidate" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.notification" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.npm" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.offer_status" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.office" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.ordered_list" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.origine" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.paperplane" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.pdf" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.pencil" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.phone" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.phone_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.pictures" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.piechart" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.pin" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.pinterest" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.pizza" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.play" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.play_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.png" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.podcast" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.positive" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.positive_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.positive_straight" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.ppt" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.print" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.promote" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.puzzle" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.puzzle_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.question" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.questions" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.quote" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.refresh" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.refuse_candidate" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.remote" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.remove" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.reset" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.resume" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.review" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.review_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.right" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.salary" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.save" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.search" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.search_people" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.settings" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.share1" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.share2" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.shield" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.show" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.source" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.spanner" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.stackoverflow" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.stackserver" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.star" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.star_outline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.strikethrough" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.subtitle" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.suitcase" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.sun" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.svg" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_column_add_after" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_column_add_before" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_column_remove" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_delete" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_divide" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_merge_cells" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_row_add_above" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_row_add_below" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.table_row_remove" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.tag" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.tags" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.target" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.teepee" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.thumbup" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.trash" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.tree" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.trophy" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.ttf" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.twitch" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.twitter" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.txt" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.type" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.underline" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.unordered_list" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.up" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.update" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.upload" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.video" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.video_camera" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.video_camera_2" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.woff" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.woff2" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.write" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.xing" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.xls" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.xlsx" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.youtube" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.zip" "^3.0.0-alpha.2"
+
+"@welcome-ui/input-text@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/input-text/-/input-text-3.0.0-alpha.2.tgz#aa91e41daf1dab68b57485c93505a9fc21af1c85"
+  integrity sha512-wLf2tpshza4zFD9mYDb0EOgHlzRYimY0ZeLE9OeMzECEWbHlz1dqtDypFrjce6Dm/le9kIAbWhnxl+PuyUSYsg==
+  dependencies:
+    "@welcome-ui/clear-button" "^3.0.0-alpha.2"
+    "@welcome-ui/field" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+
+"@welcome-ui/label@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/label/-/label-3.0.0-alpha.2.tgz#f0a5d91340e6c819bc51766ef6dcf9c0eff7488b"
+  integrity sha512-KE/BZs0F+uC+KSGQ7/m4qokACFU3RoUvTdYlmbsFjwwo7AZ+mb/LiKVYLobNbQHtsNW8+4Zo8l2WjIHVxmYyZw==
+  dependencies:
+    "@welcome-ui/icons.lock" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    "@welcome-ui/variant-icon" "^3.0.0-alpha.2"
+
+"@welcome-ui/select@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/select/-/select-3.0.0-alpha.2.tgz#0d768386b564c21aedc7d5516646382b4908c5cd"
+  integrity sha512-r8oFf37pZdSCA9gI/rhjLYsB8FpYizG7XWiXXyfGX5Bm1Pf42LSdGgUWTZDH9AKZR/uYqKRLLQA96PCMRB0IEw==
+  dependencies:
+    "@welcome-ui/clear-button" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.down" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/tag" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+    downshift "^6.0.15"
+    match-sorter "=3.1.1"
+
+"@welcome-ui/stack@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/stack/-/stack-3.0.0-alpha.2.tgz#80011a7463bae7e4f84c7828d98896145aad5241"
+  integrity sha512-hNLl03BQ+mBJcXEQkfT4f/BYJT6EuLL4o125At7joA921Gw8xYnDncLLXNwwx8y1gNGosl4EMaf8Guo6PRWKHw==
+  dependencies:
+    "@welcome-ui/box" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+
+"@welcome-ui/system@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/system/-/system-3.0.0-alpha.2.tgz#0e7f8b76d7091eb53e597792d8cc5a3ca0e9e87e"
+  integrity sha512-5ve+KhIkzYr6gXAqHj5BiTArg8LuQW3/M0VZGi4epbRAnheOuTaFiZPawryHnE/tQznQDaXhFLrAhE6jFHm+eg==
+
+"@welcome-ui/tag@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/tag/-/tag-3.0.0-alpha.2.tgz#9419dc63d83b7b7fc56aadb315d7357124268e8f"
+  integrity sha512-rjxIhoCo4Jf22QJiXPYFMwrDzU3JMP+qF0Bf/bqIZDTnnz/jerS4uV5urpR7v1CehKv6TGQJkGtvQt3A9Et7Nw==
+  dependencies:
+    "@welcome-ui/icons.cross" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+
+"@welcome-ui/text@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/text/-/text-3.0.0-alpha.2.tgz#5d25d352a7143e506a0d61ef90f396657593a08a"
+  integrity sha512-rFfEkcLWhkjniDG+ikXTH4IXI0l5kigTsZQ2yw1g9cscnfaJLBhUBtcS7krAD2QUBaaPDuwqxfHKD0+klTm/Lw==
+  dependencies:
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+
+"@welcome-ui/utils@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/utils/-/utils-3.0.0-alpha.2.tgz#9a5e99d72db2c4fb355a9800d846c6c22071a1b5"
+  integrity sha512-eH3qJfkiwbPwGdSfrSMfm8VFY/s3zFaQVT24m40rmITt1U0Y2J+vRn7CbUFaXgWgkkuKpj/c8zE46TYUnicnSQ==
+
+"@welcome-ui/variant-icon@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/variant-icon/-/variant-icon-3.0.0-alpha.2.tgz#5a87989ed0b9876150be1facc12d6153a50fd0c4"
+  integrity sha512-bKK5wdNgFji4v4Kkth8TyG2D4p7PyEnNu5fcLCPrmGMuhzYATdS6FXKKlymKFHJtcW/dJoZbFPo77t93hRhLog==
+  dependencies:
+    "@welcome-ui/icons.alert" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.check" "^3.0.0-alpha.2"
+    "@welcome-ui/icons.information" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
+
+"@xstyled/core@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@xstyled/core/-/core-2.2.3.tgz#c156c0656cfc99286524af5643b1b87c3917c3ec"
+  integrity sha512-8QmQMwK5Z0LG6HTyun79P8ZkVQn0rn+vJbbJRR7afoQ9HWcDv89HgWkIcvXReDE/xGu2A/knV5uz6E9JygtqdQ==
+  dependencies:
+    "@xstyled/system" "^2.2.3"
+
+"@xstyled/styled-components@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@xstyled/styled-components/-/styled-components-2.2.3.tgz#34895a764b430a9597bdff8792643dd3e90033f2"
+  integrity sha512-jiYThlxbZNjzFbCUMslp/4doE3nRQn7m9qTZg/GmYSKIEGssJr16b1j3xX6beNI8j6t/2tVP3+pdMDsx6iPtUg==
+  dependencies:
+    "@xstyled/core" "^2.2.3"
+    "@xstyled/system" "^2.2.3"
+    "@xstyled/util" "^2.2.3"
+
+"@xstyled/system@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@xstyled/system/-/system-2.2.3.tgz#005c653391d572c567203ee4fc2c9e619531327c"
+  integrity sha512-2OM5BNYlUa+MimyvZ0RJ3xLm9F/ULcdyxRj3rhgSC59hUU28NscbMUm8ea4Lw2cdTgDTm9jj9xkva6D0h8tXfQ==
+  dependencies:
+    "@xstyled/util" "^2.2.3"
+    csstype "^3.0.6"
+
+"@xstyled/util@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@xstyled/util/-/util-2.2.3.tgz#d1e094e8dfc0b7bfaf80d7fcbbedb3efda4501ca"
+  integrity sha512-hOtlkeCBJlmvo4eHdNAgv2gJE3djXr1oOdmpBJj1knge0hIZj6kdWpTBp0h/Uzs/8xQndbUdewdfq2cRlHcIZA==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -2609,6 +4807,21 @@ babel-plugin-named-asset-import@^0.3.7:
   resolved "https://registry.yarnpkg.com/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.3.7.tgz#156cd55d3f1228a5765774340937afc8398067dd"
   integrity sha512-squySRkf+6JGnvjoUtDEjSREJEBirnXi9NqP6rjSYsylxQxqBTz+pkmf395i9E2zsvmYUaI40BHo6SqZUdydlw==
 
+"babel-plugin-styled-components@>= 1":
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.12.0.tgz#1dec1676512177de6b827211e9eda5a30db4f9b9"
+  integrity sha512-FEiD7l5ZABdJPpLssKXjBUJMYqzbcNzBowfXDCdJhOpbhWiewapUaY+LZGT8R4Jg2TwOjGjG4RKeyrO5p9sBkA==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    "@babel/helper-module-imports" "^7.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    lodash "^4.17.11"
+
+babel-plugin-syntax-jsx@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+  integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
+
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
@@ -2784,6 +4997,11 @@ body-parser@1.19.0:
     qs "6.7.0"
     raw-body "2.4.0"
     type-is "~1.6.17"
+
+body-scroll-lock@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-3.1.5.tgz#c1392d9217ed2c3e237fee1e910f6cdd80b7aaec"
+  integrity sha512-Yi1Xaml0EvNA0OYWxXiYNqY24AfWkbA6w5vxE7GWxtKfzIbZM+Qw+aSmkgsbWzbHiy/RCSkUZBplVxTA+E4jJg==
 
 bonjour@^3.5.0:
   version "3.5.0"
@@ -3085,6 +5303,11 @@ camelcase@^6.0.0, camelcase@^6.1.0, camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
+camelize@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/camelize/-/camelize-1.0.0.tgz#164a5483e630fa4321e5af07020e531831b2609b"
+  integrity sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
+
 caniuse-api@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-3.0.0.tgz#5e4d90e2274961d46291997df599e3ed008ee4c0"
@@ -3230,6 +5453,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
 clean-css@^4.2.3:
   version "4.2.3"
@@ -3391,6 +5619,11 @@ compression@^1.7.4:
     on-headers "~1.0.2"
     safe-buffer "5.1.2"
     vary "~1.1.2"
+
+compute-scroll-into-view@^1.0.16:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/compute-scroll-into-view/-/compute-scroll-into-view-1.0.17.tgz#6a88f18acd9d42e9cf4baa6bec7e0522607ab7ab"
+  integrity sha512-j4dx+Fb0URmzbwwMUrhqWM2BEWHdFGx+qZ9qqASHRPqvTYdqvWnHg0H1hIbcyLnvgnoNAVMlwkepyqM3DaIFUg==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -3623,6 +5856,11 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
+css-color-keywords@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-color-keywords/-/css-color-keywords-1.0.0.tgz#fea2616dc676b2962686b3af8dbdbe180b244e05"
+  integrity sha1-/qJhbcZ2spYmhrOvjb2+GAskTgU=
+
 css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
@@ -3683,6 +5921,15 @@ css-select@^2.0.0, css-select@^2.0.2:
     css-what "^3.2.1"
     domutils "^1.7.0"
     nth-check "^1.0.2"
+
+css-to-react-native@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-3.0.0.tgz#62dbe678072a824a689bcfee011fc96e02a7d756"
+  integrity sha512-Ro1yETZA813eoyUp2GDBhG2j+YggidUmzO1/v9eYBKR2EHVEniE2MI/NqpTQ954BMpTPZFsGNPm46qFB9dpaPQ==
+  dependencies:
+    camelize "^1.0.0"
+    css-color-keywords "^1.0.0"
+    postcss-value-parser "^4.0.2"
 
 css-tree@1.0.0-alpha.37:
   version "1.0.0-alpha.37"
@@ -3836,7 +6083,7 @@ cssstyle@^2.2.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^3.0.2:
+csstype@^3.0.2, csstype@^3.0.6:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
   integrity sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
@@ -3874,6 +6121,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@^2.0.1:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.17.0.tgz#afa55daea539239db0a64e236ce716ef3d681ba1"
+  integrity sha512-ZEhqxUtEZeGgg9eHNSOAJ8O9xqSgiJdrL0lzSSfMF54x6KXWJiOH/xntSJ9YomJPrYH/p08t6gWjGWq1SDJlSA==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
@@ -4173,6 +6425,16 @@ dotenv@8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
+downshift@^6.0.15:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/downshift/-/downshift-6.1.0.tgz#f008063d9b63935910d9db12ead07979ab51ce66"
+  integrity sha512-MnEJERij+1pTVAsOPsH3q9MJGNIZuu2sT90uxOCEOZYH6sEzkVGtUcTBVDRQkE8y96zpB7uEbRn24aE9VpHnZg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    compute-scroll-into-view "^1.0.16"
+    prop-types "^15.7.2"
+    react-is "^17.0.1"
 
 duplexer@^0.1.1:
   version "0.1.2"
@@ -5305,6 +7567,11 @@ growly@^1.3.0:
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
 
+gud@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
+  integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
+
 gzip-size@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-5.1.1.tgz#cb9bee692f87c0612b232840a873904e4c135274"
@@ -5424,6 +7691,13 @@ hmac-drbg@^1.0.1:
     hash.js "^1.0.3"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
+
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
 
 hoopy@^0.1.4:
   version "0.1.4"
@@ -6906,6 +9180,11 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
+lodash.range@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.range/-/lodash.range-3.2.0.tgz#f461e588f66683f7eadeade513e38a69a565a15d"
+  integrity sha1-9GHliPZmg/fq3q3lE+OKaaVloV0=
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -6941,7 +9220,7 @@ loglevel@^1.6.8:
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.7.1.tgz#005fde2f5e6e47068f935ff28573e125ef72f197"
   integrity sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw==
 
-loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -7014,6 +9293,13 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+match-sorter@=3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-3.1.1.tgz#a49889245da80a3d6a032eca0c18e21f265bb42a"
+  integrity sha512-Qlox3wRM/Q4Ww9rv1cBmYKNJwWVX/WC+eA3+1S3Fv4EOhrqyp812ZEfVFKQk0AP6RfzmPUUOwEZBbJ8IRt8SOw==
+  dependencies:
+    remove-accents "0.4.2"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -8003,6 +10289,18 @@ pnp-webpack-plugin@1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
+polished@^3.4.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-3.7.1.tgz#d1addc87ee16eb5b413c6165eda37600cccb9c11"
+  integrity sha512-/QgHrNGYwIA4mwxJ/7FSvalUJsm7KNfnXiScVSEG2Xa5qxDeBn4nmdjN2pW00mkM2Tts64ktc47U8F7Ed1BRAA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
+popper.js@^1.14.4:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
+
 portfinder@^1.0.26:
   version "1.0.28"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
@@ -8761,7 +11059,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.7.2:
+prop-types@^15.6.1, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8895,6 +11193,11 @@ raf@^3.4.1:
   dependencies:
     performance-now "^2.1.0"
 
+ramda@^0.27.0:
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
+  integrity sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -8936,6 +11239,17 @@ react-app-polyfill@^2.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
+
+react-datepicker@^3.4.1:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-3.6.0.tgz#2707a1f0aaf8b1b4333281f19c5713e71fcea69e"
+  integrity sha512-QCCtC1Y5kXZSbULbP33P2p0yTU+0Det7eBFABVM2k6AqdIvyBHVkO/hlq2WDeHlPtaf+DEniCIYjrv2BFdUMHw==
+  dependencies:
+    classnames "^2.2.6"
+    date-fns "^2.0.1"
+    prop-types "^15.7.2"
+    react-onclickoutside "^6.10.0"
+    react-popper "^1.3.8"
 
 react-dev-utils@^11.0.3:
   version "11.0.3"
@@ -8981,7 +11295,7 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
-react-is@^16.8.1:
+react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -8990,6 +11304,23 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
+react-onclickoutside@^6.10.0:
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.10.0.tgz#05abb592575b08b4d129003494056b9dff46eeeb"
+  integrity sha512-7i2L3ef+0ILXpL6P+Hg304eCQswh4jl3ynwR71BSlMU49PE2uk31k8B2GkP6yE9s2D4jTGKnzuSpzWxu4YxfQQ==
+
+react-popper@^1.3.8:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-1.3.10.tgz#96fd88cc1bf45957e551c5053afea7adc0b1d4d8"
+  integrity sha512-sZfwHtHCMst0L0G/c83/Y/K1f9fNWMEKsk/cGAor68rQBHB75WuDQ7k95tkce8QNaUHhg9uFXIJbZO0eWRvJbw==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    "@hypnosphi/create-react-context" "^0.3.1"
+    popper.js "^1.14.4"
+    prop-types "^15.6.1"
+    typed-styles "^0.0.7"
+    warning "^4.0.2"
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -9144,6 +11475,36 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
+reakit-system@^0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.15.1.tgz#bf5cc7a03f60a817373bc9cbb4a689c1f4100547"
+  integrity sha512-PkqfAyEohtcEu/gUvKriCv42NywDtUgvocEN3147BI45dOFAB89nrT7wRIbIcKJiUT598F+JlPXAZZVLWhc1Kg==
+  dependencies:
+    reakit-utils "^0.15.1"
+
+reakit-utils@^0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.15.1.tgz#797f0a43f6a1dbc22d161224d5d2272e287dbfe3"
+  integrity sha512-6cZgKGvOkAMQgkwU9jdYbHfkuIN1Pr+vwcB19plLvcTfVN0Or10JhIuj9X+JaPZyI7ydqTDFaKNdUcDP69o/+Q==
+
+reakit-warning@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/reakit-warning/-/reakit-warning-0.6.1.tgz#dba33bb8866aebe30e67ac433ead707d16d38a36"
+  integrity sha512-poFUV0EyxB+CcV9uTNBAFmcgsnR2DzAbOTkld4Ul+QOKSeEHZB3b3+MoZQgcYHmbvG19Na1uWaM7ES+/Eyr8tQ==
+  dependencies:
+    reakit-utils "^0.15.1"
+
+reakit@^1.3.4:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.3.5.tgz#4e35850f4998922541cf9de305549f41931f3272"
+  integrity sha512-Luv1RPBFlWhRG32Ysjd86KC+vLoz5da3X0O8rqClaNEv259nWmnw5fG6BIUSYJwTG6PPxTidPlS+9bS6nLstfA==
+  dependencies:
+    "@popperjs/core" "^2.5.4"
+    body-scroll-lock "^3.1.5"
+    reakit-system "^0.15.1"
+    reakit-utils "^0.15.1"
+    reakit-warning "^0.6.1"
+
 recursive-readdir@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"
@@ -9242,6 +11603,11 @@ relateurl@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
+
+remove-accents@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
+  integrity sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -9743,6 +12109,11 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallowequal@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
+  integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -10247,6 +12618,22 @@ style-loader@1.3.0:
     loader-utils "^2.0.0"
     schema-utils "^2.7.0"
 
+styled-components@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.2.1.tgz#6ed7fad2dc233825f64c719ffbdedd84ad79101a"
+  integrity sha512-sBdgLWrCFTKtmZm/9x7jkIabjFNVzCUeKfoQsM6R3saImkUnjx0QYdLwJHBjY9ifEcmjDamJDVfknWm1yxZPxQ==
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@babel/traverse" "^7.4.5"
+    "@emotion/is-prop-valid" "^0.8.8"
+    "@emotion/stylis" "^0.8.4"
+    "@emotion/unitless" "^0.7.4"
+    babel-plugin-styled-components ">= 1"
+    css-to-react-native "^3.0.0"
+    hoist-non-react-statics "^3.0.0"
+    shallowequal "^1.1.0"
+    supports-color "^5.5.0"
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -10256,7 +12643,7 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-supports-color@^5.3.0:
+supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
@@ -10642,6 +13029,11 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.3.0.tgz#ada7c045f07ead08abf9e2edd29be1a0c0661132"
   integrity sha512-rgPIqOdfK/4J9FhiVrZ3cveAjRRo5rsQBAIhnylX874y1DX/kEKSVdLsnuHB6l1KTjHyU01VjiMBHgU2adejyg==
 
+typed-styles@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/typed-styles/-/typed-styles-0.0.7.tgz#93392a008794c4595119ff62dde6809dbc40a3d9"
+  integrity sha512-pzP0PWoZUhsECYjABgCGQlRGL1n7tOHsgwYv3oIiEpJwGhFTuty/YNeduxQYzXXa3Ge5BdT6sHYIQYpl4uJ+5Q==
+
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz#a97ee7a9ff42691b9f783ff1bc5112fe3fca9080"
@@ -10921,6 +13313,13 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
+
+warning@^4.0.2, warning@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
