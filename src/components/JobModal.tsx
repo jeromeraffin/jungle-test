@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Box } from "@welcome-ui/box";
 import { Button } from "@welcome-ui/button";
-
 import { Text } from "@welcome-ui/text";
 import { CrossIcon } from "@welcome-ui/icons";
 

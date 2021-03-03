@@ -11,10 +11,31 @@ import { initialState } from "../context";
 import reducer, { Actions } from "../reducer";
 
 describe("reducer", () => {
-  it("should return the state with jobs setted", () => {
+  it("should return the state with an error", () => {
     expect(
-      reducer(initialState, { type: Actions.SET_JOBS, payload: jobs })
+      reducer(initialState, { type: Actions.SET_JOBS_ERROR, payload: "Error" })
     ).toEqual({
+      loading: false,
+      error: "Error",
+      jobs: [],
+      filteredJobs: {},
+      contractTypes: [],
+      groupBy: [GroupBy.NONE, GroupBy.OFFICE, GroupBy.DEPARTMENT],
+      filters: {
+        contractType: undefined,
+        groupBy: GroupBy.DEPARTMENT,
+        publishedAfter: null,
+        searchTerms: "",
+      },
+    });
+  });
+
+  it("should return the state with jobs setted successfully", () => {
+    expect(
+      reducer(initialState, { type: Actions.SET_JOBS_SUCCESS, payload: jobs })
+    ).toEqual({
+      loading: false,
+      error: undefined,
       jobs,
       filteredJobs: {
         Media: [jobs[0]],
@@ -38,6 +59,8 @@ describe("reducer", () => {
         payload: filtersSearchTerms,
       })
     ).toEqual({
+      loading: false,
+      error: undefined,
       jobs: jobs,
       filteredJobs: {
         Tech: [jobs[1]],
@@ -60,6 +83,8 @@ describe("reducer", () => {
         payload: filtersContract,
       })
     ).toEqual({
+      loading: false,
+      error: undefined,
       jobs: jobs,
       filteredJobs: {
         Media: [jobs[0]],
@@ -82,6 +107,8 @@ describe("reducer", () => {
         payload: filtersGroupByOffice,
       })
     ).toEqual({
+      loading: false,
+      error: undefined,
       jobs,
       filteredJobs: {
         Paris: [jobs[0]],
@@ -105,6 +132,8 @@ describe("reducer", () => {
         payload: filtersGroupByNone,
       })
     ).toEqual({
+      loading: false,
+      error: undefined,
       jobs,
       filteredJobs: { none: jobs },
       contractTypes: ["Full-Time", "Internship"],

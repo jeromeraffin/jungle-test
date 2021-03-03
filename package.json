@@ -9,6 +9,7 @@
     "@welcome-ui/date-picker": "^3.0.0-alpha.2",
     "@welcome-ui/icons": "^3.0.0-alpha.2",
     "@welcome-ui/input-text": "^3.0.0-alpha.2",
+    "@welcome-ui/loader": "^3.0.0-alpha.2",
     "@welcome-ui/select": "^3.0.0-alpha.2",
     "@welcome-ui/stack": "^3.0.0-alpha.2",
     "@welcome-ui/text": "^3.0.0-alpha.2",

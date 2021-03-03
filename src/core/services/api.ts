@@ -5,7 +5,8 @@ export async function getJobs() {
     "https://www.welcomekit.co/api/v1/embed?organization_reference=Pg4eV6k"
   )
     .then((res) => res.json())
-    .then(({ jobs }) => jobs);
+    .then(({ jobs }) => jobs)
+    .catch((error) => error);
 
   return response;
 }

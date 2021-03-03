@@ -4251,6 +4251,15 @@
     "@welcome-ui/utils" "^3.0.0-alpha.2"
     "@welcome-ui/variant-icon" "^3.0.0-alpha.2"
 
+"@welcome-ui/loader@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/loader/-/loader-3.0.0-alpha.2.tgz#2f19be53332af1c5ff0af327a00f2519bff1f37f"
+  integrity sha512-tnR+gmYj08u0PBILHuPOdMkS81XpCcbi9L1iChX/TbhPLeEYcQEL0I3HDlWB+huQqXE5ekaiEFD3gYdm7nrSxA==
+  dependencies:
+    "@welcome-ui/box" "^3.0.0-alpha.2"
+    "@welcome-ui/shape" "^3.0.0-alpha.2"
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+
 "@welcome-ui/select@^3.0.0-alpha.2":
   version "3.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@welcome-ui/select/-/select-3.0.0-alpha.2.tgz#0d768386b564c21aedc7d5516646382b4908c5cd"
@@ -4263,6 +4272,14 @@
     "@welcome-ui/utils" "^3.0.0-alpha.2"
     downshift "^6.0.15"
     match-sorter "=3.1.1"
+
+"@welcome-ui/shape@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/shape/-/shape-3.0.0-alpha.2.tgz#002eb03f87c4691620e2462c735c4b16efa2415c"
+  integrity sha512-LL7+/VcbT0j8wofFO8U3PiFKpJE16XOs8J7yQc4Ow5/1K3ofs/YlaqSJmQLjrl+RSasQpYee/ayXFJ+yACHPqA==
+  dependencies:
+    "@welcome-ui/system" "^3.0.0-alpha.2"
+    "@welcome-ui/utils" "^3.0.0-alpha.2"
 
 "@welcome-ui/stack@^3.0.0-alpha.2":
   version "3.0.0-alpha.2"

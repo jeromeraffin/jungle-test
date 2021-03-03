@@ -91,25 +91,28 @@ export default function JobSearchForm() {
       flexWrap="wrap"
     >
       <InputText
+        id="searchTerms"
+        name="searchTerms"
         isClearable
         placeholder="Your dream job?"
-        name="searchTerms"
         value={filters.searchTerms}
         onChange={handleChange}
       />
       <Select
+        id="contractType"
+        name="contractType"
         w={{ xs: "100%", md: "10rem" }}
         isClearable
         placeholder="Contract Types"
-        name="contractType"
         value={filters.contractType}
         options={contractTypesOptions}
         onChange={handleContractSelectChange}
       />
       <Select
+        id="groupBy"
+        name="groupBy"
         w={{ xs: "100%", md: "10rem" }}
         placeholder="Group by"
-        name="groupBy"
         value={filters.groupBy}
         options={groupByOptions}
         onChange={handleGroupSelectChange}

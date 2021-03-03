@@ -66,6 +66,8 @@ export const jobs = [
 
 export const stateWithJobs = {
   ...initialState,
+  loading: false,
+  error: undefined,
   jobs,
   contractTypes: ["Full-Time", "Internship"],
   filteredJobs: {

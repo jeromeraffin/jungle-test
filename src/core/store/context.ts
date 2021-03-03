@@ -1,10 +1,13 @@
 import { createContext, Dispatch } from "react";
+
 import { Filters } from "../types/Filters";
 import { Job } from "../types/Job";
 import { GroupBy } from "../utils/constants";
 import { Action } from "./reducer";
 
 export type State = {
+  loading: boolean;
+  error?: string;
   jobs: Job[];
   contractTypes: string[];
   groupBy: string[];
@@ -17,6 +20,8 @@ export type State = {
 export type Context = [State, Dispatch<Action>];
 
 export const initialState: State = {
+  loading: true,
+  error: undefined,
   jobs: [],
   contractTypes: [],
   groupBy: [GroupBy.NONE, GroupBy.OFFICE, GroupBy.DEPARTMENT],

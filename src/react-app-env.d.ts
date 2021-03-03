@@ -9,3 +9,4 @@ declare module "@welcome-ui/button";
 declare module "@welcome-ui/icons";
 declare module "@welcome-ui/text";
 declare module "@welcome-ui/stack";
+declare module "@welcome-ui/loader";

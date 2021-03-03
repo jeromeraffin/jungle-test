@@ -1,6 +1,7 @@
+import _groupBy from "lodash.groupby";
+
 import { Filters } from "../types/Filters";
 import { Job } from "../types/Job";
-import _groupBy from "lodash.groupby";
 import { GroupBy } from "./constants";
 
 export function getJobFromSearchTerms(job: Job, searchTerms: string) {

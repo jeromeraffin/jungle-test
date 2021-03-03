@@ -1,13 +1,13 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { Box } from "@welcome-ui/box";
 import { Stack } from "@welcome-ui/stack";
 import { Button } from "@welcome-ui/button";
 import { Text } from "@welcome-ui/text";
 import { Job } from "../core/types/Job";
 import { WriteIcon, LocationIcon } from "@welcome-ui/icons";
-import styled from "styled-components";
-import JobModal from "./JobModal";
 
+import JobModal from "./JobModal";
 interface Props {
   job: Job;
 }
