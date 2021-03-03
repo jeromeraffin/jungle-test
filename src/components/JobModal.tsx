@@ -35,10 +35,6 @@ const Content = styled.article`
 `;
 
 export default function JobModal({ job, visible, close }: Props) {
-  const url = job.websites_urls?.find(
-    (url) => url.website_reference === "wttj_fr"
-  )?.url;
-
   if (!visible) {
     return null;
   }
@@ -54,6 +50,7 @@ export default function JobModal({ job, visible, close }: Props) {
           position="absolute"
           top="10px"
           right="10px"
+          cursor="pointer"
         />
         <Box as="section">
           <Text
@@ -96,7 +93,7 @@ export default function JobModal({ job, visible, close }: Props) {
           <Text dangerouslySetInnerHTML={{ __html: job.recruitment_process }} />
         </Box>
         <Box display="flex" justifyContent="center" my="3xl">
-          <Button as="a" href={url} w={1 / 2}>
+          <Button as="a" href={job.applyUrl} w={1 / 2}>
             Apply
           </Button>
         </Box>

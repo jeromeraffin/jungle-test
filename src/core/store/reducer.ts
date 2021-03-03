@@ -15,10 +15,18 @@ export type Action =
 export default function reducer(state: State, action: Action): State {
   switch (action.type) {
     case Actions.SET_JOBS:
+      const jobs = action.payload.map((job) => ({
+        ...job,
+        searchable: `${job.name} ${job.description} ${job.profile}`,
+        applyUrl: job.websites_urls?.find(
+          (url) => url.website_reference === "wttj_fr"
+        )?.url,
+      }));
+
       return {
         ...state,
-        jobs: action.payload,
-        filteredJobs: getFilteredJobs(action.payload, state.filters),
+        jobs,
+        filteredJobs: getFilteredJobs(jobs, state.filters),
         contractTypes: Array.from(
           new Set(action.payload.map((job) => job.contract_type.en))
         ),

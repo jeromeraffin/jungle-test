@@ -5,7 +5,7 @@ export const jobs = [
   {
     id: 305400,
     name: "Manager",
-    description: "<p>description</p>\n",
+    description: "<p>description</p>",
     published_at: "2021-01-26T17:20:35.496+01:00",
     created_at: {
       en: "The 26 January 2021 at 16h56",
@@ -19,7 +19,7 @@ export const jobs = [
     contract_type: {
       en: "Full-Time",
     },
-    profile: "<p>profile</p>\n",
+    profile: "<p>profile</p>",
     recruitment_process: "<ul>process</ul>\n",
     websites_urls: [
       {
@@ -28,11 +28,14 @@ export const jobs = [
           "https://www.welcometothejungle.com/companies/wttj/jobs/sales-developement-manager_paris",
       },
     ],
+    searchable: "Manager <p>description</p> <p>profile</p>",
+    applyUrl:
+      "https://www.welcometothejungle.com/companies/wttj/jobs/sales-developement-manager_paris",
   },
   {
     id: 305401,
     name: "Developer",
-    description: "<p>description</p>\n",
+    description: "<p>description</p>",
     published_at: "2021-01-25T17:20:35.496+01:00",
     created_at: {
       en: "The 25 January 2021 at 16h56",
@@ -46,15 +49,18 @@ export const jobs = [
     contract_type: {
       en: "Internship",
     },
-    profile: "<p>profile</p>\n",
+    profile: "<p>profile</p>",
     recruitment_process: "<ul>process</ul>\n",
     websites_urls: [
       {
         website_reference: "wttj_fr",
         url:
-          "https://www.welcometothejungle.com/companies/wttj/jobs/sales-developement-manager_paris",
+          "https://www.welcometothejungle.com/companies/wttj/jobs/developer_bordeaux",
       },
     ],
+    searchable: "Developer <p>description</p> <p>profile</p>",
+    applyUrl:
+      "https://www.welcometothejungle.com/companies/wttj/jobs/developer_bordeaux",
   },
 ];
 
