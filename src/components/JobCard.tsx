@@ -34,7 +34,7 @@ export default function JobCard({ job }: Props) {
       justifyContent="space-between"
       backgroundColor="white"
       padding="xl"
-      width="100%"
+      w="100%"
     >
       <Box>
         <Text variant="h4" m="0">

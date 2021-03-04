@@ -1,24 +1,16 @@
 import React, { useContext, useEffect } from "react";
-import styled from "styled-components";
 import { Actions } from "./core/store/reducer";
 import { Text } from "@welcome-ui/text";
 import { Box } from "@welcome-ui/box";
 import { Loader } from "@welcome-ui/loader";
 
-import JobSearchForm from "./components/JobSearchForm";
-import JobCard from "./components/JobCard";
 import context from "./core/store/context";
 import { getJobs } from "./core/services/api";
-import { GroupBy } from "./core/utils/constants";
-
-const StyledBox = styled(Box)`
-  > div > article:not(:last-child) {
-    margin-bottom: ${({ theme }) => theme.space.md};
-  }
-`;
+import JobsContent from "./components/JobsContent";
+import JobSearchForm from "./components/JobSearchForm";
 
 function App() {
-  const [{ filteredJobs, loading, error }, dispatch] = useContext(context);
+  const [{ loading, error }, dispatch] = useContext(context);
 
   useEffect(() => {
     getJobs()
@@ -42,41 +34,21 @@ function App() {
         flexDirection="column"
         alignItems="center"
         backgroundColor="light.800"
-        pl="3xl"
-        pr="3xl"
-        width="100%"
+        p="3xl"
+        w={{ xs: "100%", md: "calc(100% - 10rem)", lg: "calc(100% - 20rem)" }}
       >
+        <Text variant="h2" mt="3xl" mb="3xl">
+          Our offers
+        </Text>
+        <JobSearchForm />
         {error ? (
           <Text variant="h2" mt="3xl" mb="3xl">
             {error}
           </Text>
+        ) : !loading ? (
+          <JobsContent />
         ) : (
-          <>
-            <Text variant="h2" mt="3xl" mb="3xl">
-              Our offers
-            </Text>
-            {!loading ? (
-              <>
-                <JobSearchForm />
-                <StyledBox w="100%" mb="md">
-                  {Object.keys(filteredJobs).map((key) => (
-                    <Box key={key}>
-                      {key !== GroupBy.NONE && (
-                        <Text variant="h4" mt="3xl" mb="3xl">
-                          {key}
-                        </Text>
-                      )}
-                      {filteredJobs[key].map((job) => (
-                        <JobCard key={job.id} job={job} />
-                      ))}
-                    </Box>
-                  ))}
-                </StyledBox>
-              </>
-            ) : (
-              <Loader />
-            )}
-          </>
+          <Loader />
         )}
       </Box>
     </Box>
